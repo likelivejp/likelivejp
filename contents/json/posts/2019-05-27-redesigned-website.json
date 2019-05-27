@@ -1,0 +1,18 @@
+{
+  "title": "記事のたいとる",
+  "category": "nuxtjs",
+  "tag": [
+    "javascript",
+    "vuejs",
+    "nuxtjs"
+  ],
+  "created_at": "2019-05-27T00:00:00.000Z",
+  "image": "https://t4traw.s3-ap-northeast-1.amazonaws.com/dropshare/bSGDnU6UsCQCMyOZpM5yWyW1veVLed5q.png",
+  "bodyContent": "# 記事のたいとるを2回書く必要があるか\n\n本文の中にh1を書くか、metaデータのtitleで済ますか、いつも迷う。",
+  "bodyHtml": "<h1>記事のたいとるを2回書く必要があるか</h1>\n<p>本文の中にh1を書くか、metaデータのtitleで済ますか、いつも迷う。</p>\n",
+  "dir": "contents/json/posts",
+  "base": "2019-05-27-redesigned-website.json",
+  "ext": ".json",
+  "sourceBase": "2019-05-27-redesigned-website.md",
+  "sourceExt": ".md"
+}

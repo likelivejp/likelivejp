@@ -1,39 +1,41 @@
 <template>
   <section class="container">
     <h2 class="title">わたしたちができること</h2>
-    <div class="columns is-vcentered is-multiline is-centered">
-      <div class="column is-4">
-        <img src="~assets/development.svg" width="" height="">
+    <div class="columns">
+      <div class="column">
+        <img src="~assets/images/development.svg" width="" height="">
         <h3>foobar</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae fugit dolores</p>
         <nuxt-link to="/" class="button is-rounded">くわしく見る</nuxt-link>
       </div>
-      <div class="column is-4">
-        <img src="~assets/it.svg" width="" height="">
+      <div class="column">
+        <img src="~assets/images/it.svg" width="" height="">
         <h3>foobar</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae fugit dolores</p>
         <nuxt-link to="/" class="button is-rounded">くわしく見る</nuxt-link>
       </div>
-      <div class="column is-4">
-        <img src="~assets/automation.svg" width="" height="">
+      <div class="column">
+        <img src="~assets/images/automation.svg" width="" height="">
         <h3>foobar</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae fugit dolores</p>
         <nuxt-link to="/" class="button is-rounded">くわしく見る</nuxt-link>
       </div>
-      <div class="column is-4">
-        <img src="~assets/status.svg" width="" height="">
+    </div>
+    <div class="columns">
+      <div class="column">
+        <img src="~assets/images/status.svg" width="" height="">
         <h3>foobar</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae fugit dolores</p>
         <nuxt-link to="/" class="button is-rounded">くわしく見る</nuxt-link>
       </div>
-      <div class="column is-4">
-        <img src="~assets/clipboard.svg" width="" height="">
+      <div class="column">
+        <img src="~assets/images/clipboard.svg" width="" height="">
         <h3>foobar</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae fugit dolores</p>
         <nuxt-link to="/" class="button is-rounded">くわしく見る</nuxt-link>
       </div>
-      <div class="column is-4">
-        <img src="~assets/coding.svg" width="" height="">
+      <div class="column">
+        <img src="~assets/images/coding.svg" width="" height="">
         <h3>foobar</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae fugit dolores</p>
         <nuxt-link to="/" class="button is-rounded">くわしく見る</nuxt-link>
@@ -54,8 +56,11 @@ export default {
   text-align: center;
 }
 
+.container {
+  padding: 10rem 1rem;
+}
+
 .columns {
-  width: 100%;
   .column {
     text-align: center;
     margin: 2rem 0 2rem;

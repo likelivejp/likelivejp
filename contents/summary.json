@@ -1,0 +1,38 @@
+{
+  "fileMap": {
+    "contents/json/works/2019-05-28-add-generate-command.json": {
+      "title": "mdファイルをnodejsで生成する",
+      "category": "nodejs",
+      "tag": [
+        "javascript"
+      ],
+      "created_at": "2019-05-27T00:00:00.000Z",
+      "image": "https://t4traw.s3-ap-northeast-1.amazonaws.com/dropshare/bSGDnU6UsCQCMyOZpM5yWyW1veVLed5q.png",
+      "dir": "contents/json/works",
+      "base": "2019-05-28-add-generate-command.json",
+      "ext": ".json",
+      "sourceBase": "2019-05-28-add-generate-command.md",
+      "sourceExt": ".md"
+    },
+    "contents/json/posts/2019-05-27-redesigned-website.json": {
+      "title": "記事のたいとる",
+      "category": "nuxtjs",
+      "tag": [
+        "javascript",
+        "vuejs",
+        "nuxtjs"
+      ],
+      "created_at": "2019-05-27T00:00:00.000Z",
+      "image": "https://t4traw.s3-ap-northeast-1.amazonaws.com/dropshare/bSGDnU6UsCQCMyOZpM5yWyW1veVLed5q.png",
+      "dir": "contents/json/posts",
+      "base": "2019-05-27-redesigned-website.json",
+      "ext": ".json",
+      "sourceBase": "2019-05-27-redesigned-website.md",
+      "sourceExt": ".md"
+    }
+  },
+  "sourceFileArray": [
+    "contents/posts/2019-05-27-redesigned-website.md",
+    "contents/works/2019-05-28-add-generate-command.md"
+  ]
+}

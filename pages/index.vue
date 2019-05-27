@@ -3,6 +3,7 @@
     <first-view />
     <services />
     <works />
+    <contact />
   </div>
 </template>
 
@@ -10,12 +11,14 @@
 import FirstView from '~/components/FirstView.vue'
 import Services from '~/components/Services.vue'
 import Works from '~/components/Works.vue'
+import Contact from '~/components/Contact.vue'
 
 export default {
   components: {
     FirstView,
     Services,
     Works,
+    Contact,
   }
 }
 </script>

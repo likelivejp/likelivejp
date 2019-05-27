@@ -16,6 +16,7 @@
     "cross-env": "^5.2.0",
     "node-sass": "^4.12.0",
     "nuxt": "^2.4.0",
+    "processmd": "^4.4.2",
     "rfs": "^8.0.4",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.1"

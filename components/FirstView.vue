@@ -1,19 +1,21 @@
 <template>
-  <section class="container">
-    <div class="columns is-vcentered is-multiline is-centered">
-      <div class="column is-3 is-logo">
-        <img src="~assets/logo.svg" width="100%" height="100%">
-      </div>
-      <div class="column is-7">
-        <div class="is-main_q">
-          <h2 class="title">WEBを使って何か仕掛けたい<span>制作から運用まで</span></h2>
-          <h2 class="title">ITをもっと活用したい<span>IT化や業務効率化</span></h2>
-          <h2 class="title">業務を効率化・自動化がしたい<span>ECサイト・ホームページ・WEBアプリケーション</span></h2>
+  <div class="first_view">
+    <section class="container">
+      <div class="columns is-vcentered is-multiline is-centered">
+        <div class="column is-3 is-logo">
+          <img src="~assets/logo.svg" width="100%" height="100%">
         </div>
-        <p class="is-main_a">そのお悩み、ライクライブがスッと解決します！</p>
+        <div class="column is-7">
+          <div class="is-main_q">
+            <h2 class="title">WEBを使って何か仕掛けたい<span>制作から運用まで</span></h2>
+            <h2 class="title">ITをもっと活用したい<span>IT化や業務効率化</span></h2>
+            <h2 class="title">業務を効率化・自動化がしたい<span>ECサイト・ホームページ・WEBアプリケーション</span></h2>
+          </div>
+          <p class="is-main_a">そのお悩み、ライクライブがスッと解決します！</p>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </div>
 </template>
 
 <script>
@@ -27,8 +29,17 @@ export default {
 </script>
 
 <style scoped lang="scss">
+.first_view {
+  background-image: url('~assets/images/first_view_bg.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
 .container {
   margin: 0 auto;
+  padding: 0 1rem;
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -37,6 +48,8 @@ export default {
 
 .columns {
   width: 100%;
+  background-color: rgba(255, 255, 255, 0.82);
+  min-height: 70vh;
 }
 
 .is-logo {
