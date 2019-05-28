@@ -9,13 +9,14 @@
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
-    "md": "npx processmd \"contents/**/*.md\" --stdout --outputDir .tmp/json > .tmp/summary.json",
+    "md": "mkdir -p .tmp && npx processmd \"contents/**/*.md\" --stdout --outputDir .tmp/json > .tmp/summary.json",
     "dev-debug": "node --inspect-brk=9229 node_modules/nuxt/bin/nuxt"
   },
   "dependencies": {
     "@nuxtjs/bulma": "^1.2.1",
     "@nuxtjs/style-resources": "^0.1.2",
     "cross-env": "^5.2.0",
+    "fsevents": "^2.0.7",
     "node-sass": "^4.12.0",
     "nuxt": "^2.4.0",
     "processmd": "^4.4.2",
