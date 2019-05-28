@@ -1,9 +1,11 @@
 <template>
-  <div>
-    <h1>{{ title }}</h1>
-    <div class="post-meta"><time>{{ params.date }}</time></div>
-    <div v-html="bodyHtml"></div>
-  </div>
+  <section class="container">
+    <div>
+      <h1>{{ title }}</h1>
+      <div class="post-meta"><time>{{ params.date }}</time></div>
+      <div v-html="bodyHtml"></div>
+    </div>
+  </section>
 </template>
 
 <script>
