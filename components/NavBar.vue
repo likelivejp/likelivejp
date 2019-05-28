@@ -15,8 +15,8 @@
 
     <div class="navbar-menu" id="navMenu" :class="{'is-active': $store.state.isMenuActive}">
       <div class="navbar-end">
-        <nuxt-link to="/" class="navbar-item">ブログ</nuxt-link>
-        <nuxt-link to="/" class="navbar-item">今までのお仕事</nuxt-link>
+        <nuxt-link to="/posts" class="navbar-item">ブログ</nuxt-link>
+        <nuxt-link to="/works" class="navbar-item">今までのお仕事</nuxt-link>
         <div class="navbar-item">
           <div class="buttons">
             <a class="button is-primary is-rounded">
