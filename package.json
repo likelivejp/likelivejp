@@ -5,10 +5,11 @@
   "author": "likelive",
   "private": true,
   "scripts": {
-    "dev": "nuxt",
+    "dev": "npm run md && nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
-    "generate": "nuxt generate"
+    "generate": "nuxt generate",
+    "md": "mkdir -p .tmp && npx processmd contents/**/*.md --stdout --outputDir .tmp/json > .tmp/summary.json"
   },
   "dependencies": {
     "@nuxtjs/bulma": "^1.2.1",

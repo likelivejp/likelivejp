@@ -1,6 +1,6 @@
 import pkg from './package'
 
-const { sourceFileArray } = require('./contents/summary.json');
+const { sourceFileArray } = require('./.tmp/summary.json');
 // const sourceFileNameToUrl = require('/');
 
 const generateDynamicRoutes = callback => {
@@ -13,13 +13,9 @@ const generateDynamicRoutes = callback => {
 function sourceFileNameToUrl(filepath) {
   const deleteExt = filepath.replace('.md', '')
   const fileName = deleteExt.split('/')[deleteExt.split('/').length - 1]
-  const catName = deleteExt.split('/')[deleteExt.split('/').length - 2]
+  const categloryName = deleteExt.split('/')[deleteExt.split('/').length - 2]
   const splitArray = fileName.split('-')
-  console.log('deleteExt: ' + deleteExt);
-  console.log('fileName: ' + fileName);
-  console.log('splitArray: ' + splitArray);
-
-  return `/${catName}/${splitArray.slice(0, 3).join('-')}/${splitArray.slice(3).join('-')}`
+  return `/${categloryName}/${splitArray.slice(0, 3).join('-')}/${splitArray.slice(3).join('-')}`
 };
 
 export default {
@@ -56,6 +52,7 @@ export default {
   ** Plugins to load before mounting the App
   */
   plugins: [
+    '~/plugins/get_paths.js'
   ],
 
   /*
