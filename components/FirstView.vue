@@ -63,15 +63,15 @@ export default {
 }
 
 .is-main_q {
-  color: #00ffd2;
-  background: -webkit-linear-gradient(70deg, #66b3ff, #00d0ff);
+  color: #1beeff;
+  background: -webkit-linear-gradient(70deg, #408cff, #1beeff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .is-main_a {
   color: #ff7575;
-  background: -webkit-linear-gradient(70deg, #d973fd, #ff7575);
+  background: -webkit-linear-gradient(70deg, #ef00ff, #ff4200);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 1.4rem;
