@@ -7,22 +7,18 @@
 </template>
 
 <script>
-import { sourceFileArray } from '../../../../.tmp/summary.json';
+import { sourceFileArray } from '~/.tmp/summary.json';
 
 export default {
   validate({ params }) {
-    console.log(params);
-
-    return sourceFileArray.includes(`contents/works/${params.date}-${params.slug}.md`);
+    return sourceFileArray.includes(`contents/works/${params.slug}.md`);
   },
   asyncData({ params }) {
-    console.log(params);
-
-    return Object.assign({}, require(`~/.tmp/json/works/${params.date}-${params.slug}.json`), { params });
+    return Object.assign({}, require(`~/.tmp/json/works/${params.slug}.json`), { params });
   },
   head() {
     const title = `${this.title} - ライクライブ`;
-    const url = `https://likelive.jp/works/${this.params.date}/${this.params.slug}/`;
+    const url = `https://likelive.jp/works/${this.params.slug}/`;
     return {
       title: title,
       meta: [

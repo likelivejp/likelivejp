@@ -8,12 +8,11 @@ const routes = sourceFileArray.map(sourceFileName => {
 
 function sourceFileNameToUrl(filepath) {
   const deleteExt = filepath.replace('.md', '')
-  const fileName = deleteExt.split('/')[deleteExt.split('/').length - 1]
-  const categloryName = deleteExt.split('/')[deleteExt.split('/').length - 2]
-  const splitArray = fileName.split('-')
-
-  return `/${categloryName}/${splitArray.slice(0, 3).join('-')}/${splitArray.slice(3).join('-')}`
+  let splited = deleteExt.split("/")
+  splited.shift()
+  const categoryName = splited[0]
+  const fileName = splited[splited.length - 1]
+  return `/${splited.slice(0, splited.length - 1).join('/')}/${fileName}`
 };
 
 Vue.prototype.$getPaths = () => routes
-
