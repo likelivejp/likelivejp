@@ -1,17 +1,17 @@
 <template>
-<section class="container">
-  <div class="columns is-multiline">
-    <div class="column is-4" v-for="post in posts">
-      <card
-        :key="post"
-        :title="contents['.tmp/json' + post + '.json']['title']"
-        :image="contents['.tmp/json' + post + '.json']['image']"
-        :date="contents['.tmp/json' + post + '.json']['created_at']"
-        :url="post"
-      />
+  <section class="container">
+    <div class="columns is-multiline">
+      <div class="column is-4" v-for="post in posts">
+        <card
+          :key="post"
+          :title="contents['.tmp/json' + post + '.json']['title']"
+          :image="contents['.tmp/json' + post + '.json']['image']"
+          :date="contents['.tmp/json' + post + '.json']['created_at']"
+          :url="post"
+        />
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 </template>
 
 <style lang="scss" scoped>
@@ -33,7 +33,7 @@ export default {
   },
   data () {
     return {
-      posts: this.$getPaths(),
+      posts: this.$getPaths('posts'),
       contents: fileMap
     }
   },
