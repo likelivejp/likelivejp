@@ -1,10 +1,34 @@
 <template>
   <section class="container">
-    <div>
-      <h1>{{ title }}</h1>
-      <div class="post-meta"><time>{{ params.date }}</time></div>
+    <style>
+      html {
+        background: url({{image}});
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+      }
+      html:before {
+        content: '';
+        background: inherit;
+        filter: blur(4px);
+        position: absolute;
+        top: -5px;
+        left: -5px;
+        right: -5px;
+        bottom: -5px;
+        z-index: -1;
+      }
+    </style>
+    <bgfilter />
+    <article>
+      <header>
+        <h1>{{ title }}</h1>
+        <div class="post-meta"><time>{{ created_at.slice(0, created_at.indexOf('T', 0)) }}</time></div>
+      </header>
       <div v-html="bodyHtml"></div>
-    </div>
+    </article>
+
   </section>
 </template>
 
@@ -13,7 +37,7 @@ import { sourceFileArray } from '~/.tmp/summary.json';
 
 export default {
   validate({ params }) {
-    return sourceFileArray.includes(`contents/works/${params.slug}.md`);
+    return sourceFileArray.includes(`content/works/${params.slug}.md`);
   },
   asyncData({ params }) {
     return Object.assign({}, require(`~/.tmp/json/works/${params.slug}.json`), { params });
@@ -33,12 +57,37 @@ export default {
 };
 </script>
 
-<style scoped>
+<style scoped lang="scss">
+section {
+  margin: 20vh auto 0;
+  max-width: 920px;
+  padding: 0 1rem;
+}
+
+article {
+  z-index: 9999;
+  background-color: #fff;
+  padding: 1.5rem;
+  header {
+    padding: 1rem 0;
+    margin-bottom: 1rem;
+    h1 {
+      font-size: 2rem;
+    }
+  }
+}
+
 .post-meta {
-  font-size: 0.8em;
   color: #888;
-  margin-top: -1rem;
-  margin-bottom: 2.4rem;
-  text-align: right;
+}
+
+bgfilter {
+  position: fixed;
+  background-color: #f4f5f5e6;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
 }
 </style>
