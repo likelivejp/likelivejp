@@ -53,7 +53,6 @@ export default {
   */
   plugins: [
     '~/plugins/get_paths.js',
-    '~/plugins/get_contents_data.js'
   ],
 
   /*
