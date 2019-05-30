@@ -5,10 +5,10 @@
   "author": "likelive",
   "private": true,
   "scripts": {
-    "dev": "npm run md && nuxt",
+    "dev": "npx nf start -j Procfile",
     "build": "nuxt build",
     "start": "nuxt start",
-    "generate": "nuxt generate",
+    "generate": "npm run md && nuxt generate",
     "md": "mkdir -p .tmp && npx processmd \"content/**/*.md\" --stdout --outputDir .tmp/json > .tmp/summary.json",
     "dev-debug": "node --inspect-brk=9229 node_modules/nuxt/bin/nuxt"
   },
