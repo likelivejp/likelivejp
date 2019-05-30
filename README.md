@@ -6,6 +6,24 @@ nuxt.jsで制作しています。
 
 content/postsまたはcontent/worksにmdファイルを作成すればビルドされるようになっています。
 
+### 新規記事の生成
+
+```
+$ bin/postgen foobar
+```
+
+```
+.
+├── content
+│   └── posts
+│       └── 2016
+│           └── 01
+│               └── 02
+│                   └── foobar.md
+```
+
+といった具合にテンプレートのmdを生成できます。
+
 ## 開発
 
 ``` bash
