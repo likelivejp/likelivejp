@@ -4,7 +4,7 @@ nuxt.jsで制作しています。
 
 ## 記事について
 
-contents/postsまたはcontents/worksにmdファイルを作成すればビルドされるようになっています。
+content/postsまたはcontent/worksにmdファイルを作成すればビルドされるようになっています。
 
 ## 開発
 

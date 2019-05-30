@@ -4,9 +4,9 @@
       <div class="column is-4" v-for="post in posts">
         <card
           :key="post"
-          :title="contents['.tmp/json' + post + '.json']['title']"
-          :image="contents['.tmp/json' + post + '.json']['image']"
-          :date="contents['.tmp/json' + post + '.json']['created_at']"
+          :title="content['.tmp/json' + post + '.json']['title']"
+          :image="content['.tmp/json' + post + '.json']['image']"
+          :date="content['.tmp/json' + post + '.json']['created_at']"
           :url="post"
         />
       </div>
@@ -23,7 +23,7 @@
 </style>
 
 <script>
-// contents
+// content
 import { fileMap } from '~/.tmp/summary.json';
 import Card from '~/components/Card.vue'
 
@@ -34,7 +34,7 @@ export default {
   data () {
     return {
       posts: this.$getPaths('posts'),
-      contents: fileMap
+      content: fileMap
     }
   },
   methods: {

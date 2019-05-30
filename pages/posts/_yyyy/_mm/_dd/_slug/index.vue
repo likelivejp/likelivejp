@@ -37,7 +37,7 @@ import { sourceFileArray } from '~/.tmp/summary.json';
 
 export default {
   validate({ params }) {
-    return sourceFileArray.includes(`contents/posts/${params.yyyy}/${params.mm}/${params.dd}/${params.slug}.md`);
+    return sourceFileArray.includes(`content/posts/${params.yyyy}/${params.mm}/${params.dd}/${params.slug}.md`);
   },
   asyncData({ params }) {
     return Object.assign({}, require(`~/.tmp/json/posts/${params.yyyy}/${params.mm}/${params.dd}/${params.slug}.json`), { params });

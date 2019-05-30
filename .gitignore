@@ -85,6 +85,6 @@ sw.*
 
 .DS_Store
 
-contents/json
-contents/summary.json
+content/json
+content/summary.json
 .tmp
