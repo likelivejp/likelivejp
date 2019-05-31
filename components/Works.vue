@@ -1,15 +1,15 @@
 <template>
-  <section class="container">
-    <h2 class="title">今までにやってきたこと</h2>
-    <div class="columns is-vcentered is-multiline is-centerd">
-      <div class="column is-4">
-        <img src="https://placehold.it/500x300" width="" height="">
-        <h3>foobar</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae fugit dolores</p>
-        <nuxt-link to="/" class="button is-rounded">くわしく見る</nuxt-link>
-      </div>
+  <div class="columns is-multiline">
+    <div class="column is-4" v-for="post in posts">
+      <card
+        :key="post"
+        :title="content['.tmp/json' + post + '.json']['title']"
+        :image="content['.tmp/json' + post + '.json']['image']"
+        :date="content['.tmp/json' + post + '.json']['created_at']"
+        :url="post"
+      />
     </div>
-  </section>
+  </div>
 </template>
 
 <script>
@@ -19,14 +19,23 @@ export default {
 }
 </script>
 
-<style scoped lang="scss">
-.title {
-  text-align: center;
-}
-
-.columns {
-  .column {
-
-  }
-}
+<style lang="scss" scoped>
 </style>
+
+<script>
+// content
+import { fileMap } from '~/.tmp/summary.json';
+import Card from '~/components/Card.vue'
+
+export default {
+  components: {
+    Card,
+  },
+  data () {
+    return {
+      posts: this.$getPaths('works'),
+      content: fileMap
+    }
+  },
+}
+</script>

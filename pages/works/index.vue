@@ -1,18 +1,20 @@
 <template>
-  <section class="container">
-    <div class="columns is-multiline">
-      <div class="column is-4" v-for="post in posts">
-        <card
-          :key="post"
-          :title="content['.tmp/json' + post + '.json']['title']"
-          :image="content['.tmp/json' + post + '.json']['image']"
-          :date="content['.tmp/json' + post + '.json']['created_at']"
-          :url="post"
-        />
-      </div>
-    </div>
-  </section>
+  <div>
+    <section class="container">
+      <Works />
+    </section>
+  </div>
 </template>
+
+<script>
+import Works from '~/components/Works.vue'
+
+export default {
+  components: {
+    Works,
+  }
+}
+</script>
 
 <style lang="scss" scoped>
 .container {
@@ -22,23 +24,3 @@
 }
 </style>
 
-<script>
-// content
-import { fileMap } from '~/.tmp/summary.json';
-import Card from '~/components/Card.vue'
-
-export default {
-  components: {
-    Card,
-  },
-  data () {
-    return {
-      posts: this.$getPaths('works'),
-      content: fileMap
-    }
-  },
-  methods: {
-
-  }
-}
-</script>

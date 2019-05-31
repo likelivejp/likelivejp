@@ -1,6 +1,5 @@
 <template>
-  <section class="container">
-    <h2 class="title">わたしたちができること</h2>
+  <div>
     <div class="columns">
       <div class="column">
         <img src="~assets/images/development.svg" width="" height="">
@@ -41,7 +40,7 @@
         <nuxt-link to="/" class="button is-rounded">くわしく見る</nuxt-link>
       </div>
     </div>
-  </section>
+  </div>
 </template>
 
 <script>
@@ -54,10 +53,6 @@ export default {
 <style scoped lang="scss">
 .title {
   text-align: center;
-}
-
-.container {
-  padding: 10rem 1rem;
 }
 
 .columns {
