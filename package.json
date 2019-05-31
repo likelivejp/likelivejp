@@ -19,7 +19,6 @@
     "cross-env": "^5.2.0",
     "firebase-tools": "^6.10.0",
     "foreman": "^3.0.1",
-    "fsevents": "^2.0.7",
     "node-sass": "^4.12.0",
     "nuxt": "^2.4.0",
     "processmd": "^4.4.2",
