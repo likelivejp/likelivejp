@@ -3,7 +3,6 @@
     <nav-bar />
     <nuxt />
     <footer-container />
-    <script src="https://embed.small.chat/T1L7MFXSBGK2QY2JTG.js" async></script>
   </div>
 </template>
 
