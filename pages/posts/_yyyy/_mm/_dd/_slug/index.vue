@@ -20,7 +20,7 @@
         z-index: -1;
       }
     </style>
-    <bgfilter />
+    <div class="bgfilter"></div>
     <article>
       <header>
         <h1>{{ title }}</h1>
@@ -81,7 +81,7 @@ article {
   color: #888;
 }
 
-bgfilter {
+.bgfilter {
   position: fixed;
   background-color: #f4f5f5e6;
   top: 0;

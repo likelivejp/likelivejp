@@ -1,5 +1,5 @@
 <template>
-  <div class="default" v-clork>
+  <div class="default">
     <nav-bar />
     <nuxt />
     <footer-container />
@@ -8,12 +8,12 @@
 
 <script>
 import NavBar from '~/components/NavBar.vue'
-// import FooterContainer from '~/components/FooterContainer.vue'
+import FooterContainer from '~/components/FooterContainer.vue'
 
 export default {
   components: {
     NavBar,
-    // FooterContainer
+    FooterContainer
   }
 }
 </script>

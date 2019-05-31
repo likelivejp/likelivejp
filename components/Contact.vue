@@ -48,13 +48,5 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.title {
-  text-align: center;
-}
 
-.columns {
-  .column {
-
-  }
-}
 </style>

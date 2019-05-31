@@ -32,7 +32,7 @@
 <script>
 export default {
   watch: {
-    '$route' () {
+    '$route': function () {
       this.$store.commit('closeMenu')
     }
   }
