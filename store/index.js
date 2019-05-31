@@ -1,5 +1,6 @@
 export const state = () => ({
-  isMenuActive: false
+  isMenuActive: false,
+  isTransparent: true
 })
 
 export const mutations = {
@@ -8,5 +9,11 @@ export const mutations = {
   },
   closeMenu(state) {
     state.isMenuActive = false
+  },
+  transparentNavbar(state) {
+    state.isTransparent = true
+  },
+  nonTtransparentNavbar(state) {
+    state.isTransparent = false
   }
 }

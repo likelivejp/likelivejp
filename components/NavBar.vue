@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar is-spaced is-fixed-top" role="navigation" aria-label="main navigation">
+  <nav class="navbar is-spaced is-fixed-top" :class="{'is-transparent': $store.state.isTransparent}" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
       <nuxt-link to="/" class="navbar-item">
         <img src="~assets/logo.svg" width="80px" height="100%">
@@ -35,6 +35,26 @@ export default {
     '$route': function () {
       this.$store.commit('closeMenu')
     }
+  },
+  data () {
+    return {
+      scrolled: false
+    };
+  },
+  methods: {
+    handleScroll () {
+      if (window.scrollY > (window.outerHeight - 230)) {
+        this.$store.commit('nonTtransparentNavbar')
+      } else {
+        this.$store.commit('transparentNavbar')
+      }
+    }
+  },
+  beforeMount () {
+    window.addEventListener('scroll', this.handleScroll);
+  },
+  beforeDestroy () {
+    window.removeEventListener('scroll', this.handleScroll);
   }
 }
 </script>
@@ -55,8 +75,7 @@ export default {
   }
 }
 
-
-.navbar {
+.is-transparent {
   background: none;
 }
 </style>
