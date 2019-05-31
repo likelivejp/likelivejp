@@ -10,7 +10,8 @@
     "start": "nuxt start",
     "generate": "npm run md && nuxt generate",
     "md": "mkdir -p .tmp && npx processmd \"content/**/*.md\" --stdout --outputDir .tmp/json > .tmp/summary.json",
-    "dev-debug": "node --inspect-brk=9229 node_modules/nuxt/bin/nuxt"
+    "dev-debug": "node --inspect-brk=9229 node_modules/nuxt/bin/nuxt",
+    "deploy": "npm run generate && npx firebase deploy --only hosting --token \"$FIREBASE_TOKEN\""
   },
   "dependencies": {
     "@nuxtjs/bulma": "^1.2.1",
