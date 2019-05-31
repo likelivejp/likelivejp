@@ -1,6 +1,7 @@
 export const state = () => ({
   isMenuActive: false,
-  isTransparent: true
+  isTransparent: true,
+  isFixedTop: false
 })
 
 export const mutations = {
@@ -15,5 +16,11 @@ export const mutations = {
   },
   nonTtransparentNavbar(state) {
     state.isTransparent = false
+  },
+  fixedTopNavbar(state) {
+    state.isFixedTop = true
+  },
+  nonFixedTopNavbar(state) {
+    state.isFixedTop = false
   }
 }

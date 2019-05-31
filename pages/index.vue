@@ -26,6 +26,7 @@
 
 .container {
   margin: 10rem auto;
+  padding: 0 2rem;
   max-width: 1080px;
 }
 </style>
@@ -42,6 +43,12 @@ export default {
     Services,
     Works,
     Contact,
+  },
+  beforeMount () {
+    this.$store.commit('fixedTopNavbar')
+  },
+  beforeDestroy () {
+    this.$store.commit('nonFixedTopNavbar')
   }
 }
 </script>
