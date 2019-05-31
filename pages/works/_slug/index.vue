@@ -14,8 +14,8 @@
         filter: blur(4px);
         position: absolute;
         top: -5px;
-        left: -5px;
-        right: -5px;
+        left: 0px;
+        right: 0px;
         bottom: -5px;
         z-index: -1;
       }
