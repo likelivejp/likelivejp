@@ -33,7 +33,7 @@
 export default {
   watch: {
     '$route' () {
-      this.isMenuActive = false
+      this.$store.commit('closeMenu')
     }
   }
 }

@@ -1,5 +1,5 @@
 <template>
-  <div class="default">
+  <div class="default" v-clork>
     <nav-bar />
     <nuxt />
     <footer-container />

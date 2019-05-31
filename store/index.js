@@ -5,5 +5,8 @@ export const state = () => ({
 export const mutations = {
   toggleMenu(state) {
     state.isMenuActive = !state.isMenuActive
+  },
+  closeMenu(state) {
+    state.isMenuActive = false
   }
 }
