@@ -59,7 +59,7 @@ export default {
 
 <style scoped lang="scss">
 section {
-  margin: 20vh auto 0;
+  margin: 6vh auto 0;
   max-width: 920px;
   padding: 0 1rem;
 }
