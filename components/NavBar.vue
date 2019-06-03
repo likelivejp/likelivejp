@@ -2,7 +2,7 @@
   <nav class="navbar is-spaced" :class="{'is-transparent': $store.state.isTransparent, 'is-fixed-top': $store.state.isFixedTop}" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
       <nuxt-link to="/" class="navbar-item">
-        <img src="~assets/logo.svg" width="80px" height="100%">
+        <img src="~assets/logo.svg" width="80px" height="100%" alt="">
         <p class="name">ライクライブ<span>豊橋市・東三河で最先端のWEB開発・IT戦略を提供できるチーム</span></p>
       </nuxt-link>
 
