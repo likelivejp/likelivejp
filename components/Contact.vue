@@ -44,7 +44,7 @@
 
       <hr>
 
-      <button class="button is-large is-info  " type="submit" data-formrun-error-text="未入力の項目があります" data-formrun-submitting-text="送信中...">送信</button>
+      <button class="button is-large" type="submit" data-formrun-error-text="未入力の項目があります" data-formrun-submitting-text="送信中...">送信</button>
     </form>
     <script src="https://sdk.form.run/js/v2/formrun.js"></script>
   </div>
