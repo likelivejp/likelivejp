@@ -1,16 +1,33 @@
 article {
   z-index: 9999;
   background-color: #fff;
-  padding: 1.5rem;
+
+  @media screen and (min-width: $tablet_width + 1px) {
+    padding: 2rem 3rem;
+  }
+  @media only screen and (min-width: $smartphone_width + 1px) and (max-width: $tablet_width) {
+    padding: 1.5rem 2rem;
+  }
+  @media screen and (max-width: $smartphone_width) {
+    padding: 0.5rem 1.5rem;
+  }
+
   header {
     padding: 1rem 0;
     margin-bottom: 1rem;
+
     h1 {
       font-size: 2rem;
     }
-    p {
-      margin-bottom: 2rem;
-    }
+  }
+
+  p, ul, ol, blockquote {
+    margin-bottom: 2rem;
+    @include font-size(1.2rem);
+  }
+
+  ul, ol {
+    margin-left: 1.5rem;
   }
 
   .post-meta {
