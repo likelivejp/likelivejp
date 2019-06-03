@@ -2,7 +2,7 @@
 <nuxt-link :to="url">
   <div class="content">
     <div class="content-image">
-      <img :src="image">
+      <img :src="image" alt="">
     </div>
     <div class="content-body">
       <div class="media">

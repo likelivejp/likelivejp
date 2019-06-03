@@ -3,7 +3,7 @@
     <section class="container">
       <div class="columns is-vcentered is-multiline is-centered">
         <div class="column is-3 is-logo">
-          <img src="~assets/logo.svg" width="100%" height="100%">
+          <img src="~assets/logo.svg" width="100%" height="100%" alt="">
         </div>
         <div class="column is-7">
           <div class="is-main_q">
