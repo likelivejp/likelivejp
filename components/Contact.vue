@@ -5,31 +5,34 @@
     <form class="formrun" action="https://form.run/api/v1/r/me2rz6ov8tce8lzdxd9s1uc5" method="post">
       <!-- ↓自由に要素を追加・編集することができます -->
       <div class="field">
-        <label class="label">お名前</label>
-        <div class="control">
-          <input name="お名前" type="text" class="input">
-        </div>
+        <label class="label" for="name">お名前
+          <div class="control">
+            <input name="お名前" type="text" class="input" id="name">
+          </div>
+        </label>
       </div>
 
       <div class="field">
-        <label class="label">メールアドレス [必須]</label>
-        <div class="control">
-          <input class="input" name="メールアドレス" type="text" data-formrun-type="email" data-formrun-required>
-          <div data-formrun-show-if-error="メールアドレス">メールアドレスを正しく入力してください</div>
-        </div>
+        <label class="label" for="email">メールアドレス [必須]
+          <div class="control">
+            <input class="input" name="メールアドレス" type="text" data-formrun-type="email" data-formrun-required id="email">
+            <div data-formrun-show-if-error="メールアドレス">メールアドレスを正しく入力してください</div>
+          </div>
+        </label>
       </div>
 
       <div class="field">
-        <label class="label">お問い合わせ [必須]</label>
-        <div class="control">
-          <textarea class="textarea" name="お問い合わせ" data-formrun-required></textarea>
-        <div data-formrun-show-if-error="お問い合わせ">お問い合わせ入力してください</div>
-        </div>
+        <label class="label" for="body">お問い合わせ [必須]
+          <div class="control">
+            <textarea class="textarea" name="お問い合わせ" data-formrun-required id="body"></textarea>
+          <div data-formrun-show-if-error="お問い合わせ">お問い合わせ入力してください</div>
+          </div>
+        </label>
       </div>
 
       <div>
-        <label class="checkbox">
-          <input type="checkbox" name="個人情報利用同意" data-formrun-required>
+        <label class="checkbox" for="policy">
+          <input type="checkbox" name="個人情報利用同意" data-formrun-required id="policy">
           個人情報利用同意 [必須]
         </label>
         <div data-formrun-show-if-error="個人情報利用同意">同意してください</div>
