@@ -26,7 +26,7 @@
         <h1>{{ title }}</h1>
         <div class="post-meta"><time>{{ created_at.slice(0, created_at.indexOf('T', 0)) }}</time></div>
       </header>
-      <div v-html="bodyHtml"></div>
+      <div v-html="bodyHtml" class="post-body"></div>
     </article>
 
   </section>
@@ -62,32 +62,5 @@ section {
   margin: 6vh auto 0;
   max-width: 920px;
   padding: 0 1rem;
-}
-
-article {
-  z-index: 9999;
-  background-color: #fff;
-  padding: 1.5rem;
-  header {
-    padding: 1rem 0;
-    margin-bottom: 1rem;
-    h1 {
-      font-size: 2rem;
-    }
-  }
-}
-
-.post-meta {
-  color: #888;
-}
-
-.bgfilter {
-  position: fixed;
-  background-color: #f4f5f5e6;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  z-index: -1;
 }
 </style>

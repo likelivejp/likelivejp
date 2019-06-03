@@ -1,0 +1,35 @@
+article {
+  z-index: 9999;
+  background-color: #fff;
+  padding: 1.5rem;
+  header {
+    padding: 1rem 0;
+    margin-bottom: 1rem;
+    h1 {
+      font-size: 2rem;
+    }
+    p {
+      margin-bottom: 2rem;
+    }
+  }
+
+  .post-meta {
+    color: #888;
+  }
+
+  .post-body {
+    p {
+      margin-bottom: 1.5rem;
+    }
+  }
+}
+
+.bgfilter {
+  position: fixed;
+  background-color: #f4f5f5e6;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+}

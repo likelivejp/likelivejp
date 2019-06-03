@@ -68,6 +68,7 @@ export default {
     scss: [
       '~assets/css/var.scss',
       '~assets/css/common.scss',
+      '~assets/css/article.scss',
       '@node_modules/rfs/scss.scss',
     ]
   },
