@@ -53,12 +53,13 @@ export default {
 }
 
 .is-logo {
-@media screen and (min-width: $tablet_width + 1px) {
-}
-@media only screen and (min-width: $smartphone_width + 1px) and (max-width: $tablet_width) {
-}
-@media screen and (max-width: $smartphone_width) {
-  display :none;
+  @media screen and (min-width: $tablet_width + 1px) {
+  }
+  @media only screen and (min-width: $smartphone_width + 1px) and (max-width: $tablet_width) {
+    display :none;
+  }
+  @media screen and (max-width: $smartphone_width) {
+    display :none;
   }
 }
 
