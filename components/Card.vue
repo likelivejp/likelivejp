@@ -4,13 +4,13 @@
     <div class="content-image">
       <img :src="image">
     </div>
-    <div class="content-content">
+    <div class="content-body">
       <div class="media">
         <div class="media-content">
           <p class="title">{{ title }}</p>
         </div>
       </div>
-      <div class="content">
+      <div class="content-date">
         <time datetime="2019-05-22">2019-05-22</time>
       </div>
     </div>
@@ -32,10 +32,9 @@ export default {
 </script>
 
 <style scoped lang="scss">
-
 .content {
-  $content_box_color: #858381;
-  color: lighten($color: $content_box_color, $amount: 20);
+  $content_box_color: #6d6862;
+  color: $content_box_color;
   .content-image {
     overflow: hidden;
     width: 100%;
@@ -52,13 +51,15 @@ export default {
       height: auto;
     }
   }
-  .content-content {
+  .content-body {
     display: block;
     .title {
       font-size: 1.2rem;
       color: $content_box_color;
     }
   }
+  .content-date {
+    text-align: right;
+  }
 }
-
 </style>
