@@ -25,6 +25,9 @@ export default {
   ** Headers of the page
   */
   head: {
+    htmlAttrs: {
+      lang: 'ja'
+    },
     title: pkg.name,
     meta: [
       { charset: 'utf-8' },
