@@ -1,14 +1,28 @@
 ---
-title: サイトをNuxt.js×Firebaseでリニューアルしました
+title: サイトをリニューアルし、より高速化・インタラクティブになりました。
 created_at: 2019-05-30
 category: ライクライブ
 tags: 
   - vuejs
   - nuxtjs
   - firebase
-image: https://likelive.s3-ap-northeast-1.amazonaws.com/nuxtjs-firebase.png
+image: https://likelive.s3.amazonaws.com/2019-06-03_120706.png
 ---
-当サイトをリニューアルしました。
+より高速かつインタラクティブな体験をしていただくために、サイトをリニューアルしました。
 
-より高速かつインタラクティブな体験をしていただくために、今回はNuxt.js×Firebaseという構成を採用しました。
+※技術的な詳しいことはこちらの記事（[NuxtJSとFirebaseで作る次世代静的サイト](/posts/2019/06/03/create_a_website_with_nuxjs_and_firebase)）をご覧ください。
+
+2017年にはスマートフォンユーザーがインターネットの過半数を超え、より軽量で早いWEBサイト・WEBアプリケーションが求められるようになりました。
+
+また、2018年にはPCサイト・スマホサイトの両方で表示速度も検索結果に影響するとGoogleから発表されています。
+
+ライクライブでは、
+
+1. 検索エンジンであるGoogle
+2. サイトを運営するにあたっての規模感
+3. 実際に訪れるユーザー
+
+に合わせて最適な解決策・提案をいたします。
+
+まずはお気軽にお問い合わせください。
 
