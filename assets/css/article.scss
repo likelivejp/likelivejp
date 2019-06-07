@@ -3,7 +3,7 @@ article {
   background-color: #fff;
 
   @media screen and (min-width: $tablet_width + 1px) {
-    padding: 2rem 3rem;
+    padding: 3rem 5rem;
   }
   @media only screen and (min-width: $smartphone_width + 1px) and (max-width: $tablet_width) {
     padding: 1.5rem 2rem;
@@ -14,20 +14,35 @@ article {
 
   header {
     padding: 1rem 0;
-    margin-bottom: 1rem;
+    margin-bottom: 3.5rem;
 
     h1 {
-      font-size: 2rem;
+      @include font-size(2.2rem);
+      margin-bottom: 2rem;
     }
   }
 
+  h2 {
+    @include font-size(1.6rem);
+    margin-top: 4rem;
+    border-bottom: 1px solid #eae8e8;
+    padding-bottom: 0.2rem;
+  }
+
+  h3 {
+    @include font-size(1.35rem);
+    margin-top: 4rem;
+    border-bottom: 1px dotted #eae8e8;
+    padding-bottom: 0.2rem;
+  }
+
   p, ul, ol, blockquote {
-    margin-bottom: 2rem;
+    margin: 1rem 0;
     @include font-size(1.2rem);
   }
 
   ul, ol {
-    margin-left: 1.5rem;
+    margin-left: 2rem;
   }
 
   .post-meta {

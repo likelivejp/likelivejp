@@ -12,7 +12,7 @@
         content: '';
         background: inherit;
         filter: blur(4px);
-        position: absolute;
+        position: fixed;
         top: -5px;
         left: 0px;
         right: 0px;
