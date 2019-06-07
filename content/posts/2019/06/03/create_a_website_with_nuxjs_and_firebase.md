@@ -1,5 +1,5 @@
 ---
-title: NuxtJSとFirebaseで作る次世代静的サイト
+title: Nuxt.jsとFirebaseで作る次世代静的ウェブサイト
 created_at: 2019-06-03
 category: nuxtjs
 tags: 
@@ -10,34 +10,26 @@ tags:
 image: https://likelive.s3-ap-northeast-1.amazonaws.com/nuxtjs-firebase.png
 author: t4traw
 ---
-こんにちは。@t4trawです。
-
 ライクライブのサイトをリニューアルしました。
 
-リニューアルするにあたってのファースト・プライオリティーは『スピード』でした。
+今までよりも『速く』、今後もっと『インタラクティブ』なサイトにするため、Nuxt.js(Vue.js)でサイトを構築し、ホストにGoogle Firebaseを利用しました。
 
-## 細々した改善点
+## Nuxt.jsのメリット
 
-### nuxt.jsでhtml要素にlang属性を設定する
+Nuxt.jsはVue.jsでサイト制作をする時に便利なVuexやRouterなどをひとまとめにしたフレームワークです。
 
-nuxt.jsの初期状態ではhtml要素にlang属性が設定されておらず、「<html> element does not have a [lang] attribute 」と怒られてしまいます。ので、nxut.config.jsのheadの部分に
+制作したい内容によってSPA（シングルページアプリケーション）, SSR（サーバーサイドレンダリング）, 静的化といったさまざまな運用が簡単にできるのが強みです。今流行りのPWAもNuxt.jsでできますね。
 
-```js
-export default {
-  head: {
-    htmlAttrs: {
-      lang: 'ja'
-    },
-  // 以下省略
-```
+今回はNuxt.jsのジェネレート機能を使って静的サイトで構築しました。
 
-といった具合にlang属性を設定してあげます。
+静的サイトの出力だけだったらmiddleman, jekyll, Hugo, Hexoなどいろいろありますが、
 
-### 装飾的な画像に空のalt属性を設定する
+- コンポーネントの切り出し
+- パッケージマネージャーがnpmだけで良いこと
+- サイトの形式に柔軟（ブログスタイルやコーポレートサイトなど）
+- そして素晴らしいVue.jsのScopedCSS
 
-HTML5では、「代替テキストが必要ではないimg要素に関しては省略が可能」のはずなのですが、Lighthouseでは「Image elements do not have [alt] attributes」と怒られてしまいます。
+といった点から、Nuxt.jsを採用しました。いくつかのページを見ていただけたら、ページ遷移のスピードを実感していただけると思います。
 
-> Informative elements should aim for short, descriptive alternate text. Decorative elements can be ignored with an empty alt attribute.
-
-とあるので、装飾的な画像には空のalt属性をしっかり設定しました。
+これから何回かにわたって、そこまで大きなウェブサイトでなくてもNuxt.jsやVue.jsを使った便利な静的サイトやウェブアプリケーションに関する記事を書いていけたらと思います。
 

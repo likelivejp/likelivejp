@@ -10,7 +10,7 @@ image: https://likelive.s3.amazonaws.com/2019-06-03_120706.png
 ---
 より高速かつインタラクティブな体験をしていただくために、サイトをリニューアルしました。
 
-※技術的な詳しいことはこちらの記事（[NuxtJSとFirebaseで作る次世代静的サイト](/posts/2019/06/03/create_a_website_with_nuxjs_and_firebase)）をご覧ください。
+※技術的な詳しいことはこちらの記事（[Nuxt.jsとFirebaseで作る次世代静的ウェブサイト](/posts/2019/06/03/create_a_website_with_nuxjs_and_firebase)）をご覧ください。
 
 2017年にはスマートフォンユーザーがインターネットの過半数を超え、より軽量で早いWEBサイト・WEBアプリケーションが求められるようになりました。
 
@@ -18,7 +18,7 @@ image: https://likelive.s3.amazonaws.com/2019-06-03_120706.png
 
 ライクライブでは、
 
-1. 検索エンジンであるGoogle
+1. 検索エンジン
 2. サイトを運営するにあたっての規模感
 3. 実際に訪れるユーザー
 
