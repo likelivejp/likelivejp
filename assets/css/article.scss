@@ -37,8 +37,9 @@ article {
   }
 
   p, ul, ol, blockquote {
-    margin: 2.5rem 0;
+    margin: 2.8rem 0;
     @include font-size(1.2rem);
+    line-height: 1.65;
   }
 
   ul, ol {
