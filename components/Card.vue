@@ -55,6 +55,7 @@ export default {
     display: block;
     .title {
       font-size: 1.2rem;
+      font-weight: normal;
       color: $content_box_color;
     }
   }
