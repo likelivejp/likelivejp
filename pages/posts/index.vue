@@ -6,7 +6,7 @@
           :key="post"
           :title="content['.tmp/json' + post + '.json']['title']"
           :image="content['.tmp/json' + post + '.json']['image']"
-          :date="content['.tmp/json' + post + '.json']['created_at']"
+          :date="extract_date(content['.tmp/json' + post + '.json']['created_at'])"
           :url="post"
         />
       </div>
@@ -38,7 +38,9 @@ export default {
     }
   },
   methods: {
-
+    extract_date: function (date) {
+      return date.slice(0, date.search(/T/))
+    }
   }
 }
 </script>

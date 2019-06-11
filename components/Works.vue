@@ -5,7 +5,7 @@
         :key="post"
         :title="content['.tmp/json' + post + '.json']['title']"
         :image="content['.tmp/json' + post + '.json']['image']"
-        :date="content['.tmp/json' + post + '.json']['created_at']"
+        :date="extract_date(content['.tmp/json' + post + '.json']['created_at'])"
         :url="post"
       />
     </div>
@@ -16,7 +16,6 @@
 </style>
 
 <script>
-// content
 import { fileMap } from '~/.tmp/summary.json';
 import Card from '~/components/Card.vue'
 
@@ -30,5 +29,10 @@ export default {
       content: fileMap
     }
   },
+  methods: {
+    extract_date: function (date) {
+      return date.slice(0, date.search(/T/))
+    }
+  }
 }
 </script>

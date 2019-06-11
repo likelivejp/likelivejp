@@ -11,7 +11,7 @@
         </div>
       </div>
       <div class="content-date">
-        <time datetime="2019-05-22">2019-05-22</time>
+        <time :datetime="date">{{ date }}</time>
       </div>
     </div>
   </div>
