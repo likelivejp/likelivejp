@@ -49,6 +49,8 @@ export default {
   */
   css: [
     { src: '~assets/css/bulma.scss', lang: 'scss' },
+    '~assets/css/common.scss',
+    '~assets/css/article.scss',
   ],
 
   /*
@@ -72,8 +74,6 @@ export default {
     scss: [
       '@node_modules/rfs/scss.scss',
       '~assets/css/var.scss',
-      '~assets/css/common.scss',
-      '~assets/css/article.scss',
     ]
   },
 
