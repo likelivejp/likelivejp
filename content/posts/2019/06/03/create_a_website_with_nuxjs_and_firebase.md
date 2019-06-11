@@ -7,7 +7,7 @@ tags:
   - firebase
   - vue
   - javascript
-image: https://likelive.s3-ap-northeast-1.amazonaws.com/nuxtjs-firebase.png
+image: https://t4traw.s3-ap-northeast-1.amazonaws.com/dropshare/mjOZoMuEaHUvyOP4LHmspyZN7TaflsGM.png
 author: t4traw
 ---
 ライクライブのサイトをリニューアルしました。
