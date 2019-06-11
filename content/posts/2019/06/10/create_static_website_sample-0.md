@@ -246,8 +246,8 @@ h1[data-v-05d4cbf4] {
 
 ## Nuxt.js×Firebaseでサクっと静的サイト制作
 
-- [Nuxt.jsのセットアップ](/posts/2019/06/10/create_static_website_sample)
-- 共通cssの作成と読み込み
+- [Nuxt.jsのセットアップ](/posts/2019/06/10/create_static_website_sample-0)
+- [共通cssの作成と読み込み](/posts/2019/06/11/create_static_website_sample-1)
 - Bulmaの導入とメニュー開閉スクリプト
 - markdownでページ作成とパーマリンクの作成
 - 問い合わせフォームの実装
