@@ -22,51 +22,69 @@ article {
     }
   }
 
-  h2 {
-    @include font-size(1.6rem);
-    margin-top: 4rem;
-    border-bottom: 1px solid #eae8e8;
-    padding-bottom: 0.2rem;
-  }
-
-  h3 {
-    @include font-size(1.35rem);
-    margin-top: 4rem;
-    border-bottom: 1px dotted #eae8e8;
-    padding-bottom: 0.2rem;
-  }
-
-  p, ul, ol, blockquote {
-    margin: 2.8rem 0;
-    @include font-size(1.2rem);
-    line-height: 1.65;
-  }
-
-  ul, ol {
-    margin-left: 2rem;
-  }
-
-  ul {
-    list-style-type: disc;
-  }
-
   img {
     width: 100%;
   }
 
+  .post-meta {
+    color: #888;
+  }
+
   .post-body {
+    h2 {
+      @include font-size(1.6rem);
+      margin-top: 4rem;
+      border-bottom: 1px solid #eae8e8;
+      padding-bottom: 0.2rem;
+    }
+
+    h3 {
+      @include font-size(1.35rem);
+      margin-top: 4rem;
+      border-bottom: 1px dotted #eae8e8;
+      padding-bottom: 0.2rem;
+    }
+
+    p, ul, ol, blockquote {
+      margin: 2.8rem 0;
+      @include font-size(1.2rem);
+      line-height: 1.65;
+    }
+
+    ul, ol {
+      margin-left: 2rem;
+    }
+
+    ul {
+      list-style-type: disc;
+    }
+
     img {
       filter: drop-shadow(0px 3px 4px rgba(0, 0, 0, 0.25));
+    }
+
+    blockquote {
+      position: relative;
+      padding: 15px;
+      box-sizing: border-box;
+      background: #eaf5f0;
+      color: #656161;
+      p {
+        margin: 0;
+        font-size: 1.1rem;
+      }
+      cite {
+        display: block;
+        text-align: right;
+        color: #888888;
+        font-size: 0.9em;
+      }
     }
   }
 
   hr {
     background-color: #e2e2e2;
     height: 1px;
-  }
-
-  .post-meta {
-    color: #888;
   }
 }
 
