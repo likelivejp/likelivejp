@@ -23,7 +23,6 @@
 </style>
 
 <script>
-// content
 import { fileMap } from '~/.tmp/summary.json';
 import Card from '~/components/Card.vue'
 
