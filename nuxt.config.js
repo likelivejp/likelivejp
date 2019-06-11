@@ -56,6 +56,7 @@ export default {
   */
   plugins: [
     '~/plugins/get_paths.js',
+    '~/plugins/md_to_html.js',
   ],
 
   /*
