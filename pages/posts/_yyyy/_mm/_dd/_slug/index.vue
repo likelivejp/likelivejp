@@ -23,6 +23,7 @@
     <div class="bgfilter"></div>
     <article>
       <header>
+        <img :src="image" alt="">
         <h1>{{ title }}</h1>
         <div class="post-meta"><time>{{ created_at.slice(0, created_at.indexOf('T', 0)) }}</time></div>
       </header>
@@ -58,9 +59,9 @@ export default {
 </script>
 
 <style scoped lang="scss">
-section {
-  margin: 6vh auto 0;
-  max-width: 920px;
-  padding: 0 1rem;
-}
+  section {
+    margin: 3vh auto 0;
+    max-width: 920px;
+    padding: 0 1rem;
+  }
 </style>
