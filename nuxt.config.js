@@ -48,7 +48,7 @@ export default {
   ** Global CSS
   */
   css: [
-    { src: '~assets/css/bulma.scss', lang: 'scss' },
+    '~assets/css/bulma.scss',
     '~assets/css/common.scss',
     '~assets/css/article.scss',
   ],

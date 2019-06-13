@@ -1,19 +1,19 @@
 <template>
-  <nav class="navbar is-spaced" :class="{'is-transparent': $store.state.isTransparent, 'is-fixed-top': $store.state.isFixedTop}" role="navigation" aria-label="main navigation">
+  <nav class="navbar is-spaced" :class="{'is-transparent': isTransparentNavbar, 'is-fixed-top': isFixedTop}" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
       <nuxt-link to="/" class="navbar-item">
         <img src="~assets/logo.svg" width="80px" height="100%" alt="">
         <p class="name">ライクライブ<span>豊橋市・東三河で最先端のWEB開発・IT戦略を提供できるチーム</span></p>
       </nuxt-link>
 
-      <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navMenu" @click="$store.commit('toggleMenu')" :class="{'is-active': $store.state.isMenuActive}">
+      <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navMenu" @click="toggleMenu" :class="{'is-active': isMenuActive}">
         <span aria-hidden="true"></span>
         <span aria-hidden="true"></span>
         <span aria-hidden="true"></span>
       </a>
     </div>
 
-    <div class="navbar-menu" id="navMenu" :class="{'is-active': $store.state.isMenuActive}">
+    <div class="navbar-menu" id="navMenu" :class="{'is-active': isMenuActive}">
       <div class="navbar-end">
         <nuxt-link to="/posts" class="navbar-item">ブログ</nuxt-link>
         <nuxt-link to="/works" class="navbar-item">今までのお仕事</nuxt-link>
@@ -31,25 +31,47 @@
 
 <script>
 export default {
-  watch: {
-    '$route': function () {
-      this.$store.commit('closeMenu')
+  data: () => {
+    return {
+      isMenuActive: false,
+      isTransparentNavbar: true,
+      isFixedTop: false
     }
   },
   methods: {
+    toggleMenu () {
+      this.isMenuActive = !this.isMenuActive
+    },
     handleScroll () {
       if (window.scrollY > (window.outerHeight - 230)) {
-        this.$store.commit('nonTtransparentNavbar')
+        this.isTransparentNavbar = false
       } else {
-        this.$store.commit('transparentNavbar')
+        this.isTransparentNavbar = true
       }
     }
   },
+  watch: {
+    '$route': function () {
+      this.isMenuActive = false
+      if (this.$route.path === '/') {
+        this.isFixedTop = true
+      } else {
+        this.isFixedTop = false
+      }
+    }
+  },
+  created: function() {
+    if (this.$route.path === '/') {
+      this.isFixedTop = true
+    } else {
+      this.isFixedTop = false
+    }
+  },
   beforeMount () {
-    window.addEventListener('scroll', this.handleScroll);
+    window.addEventListener('scroll', this.handleScroll)
   },
   beforeDestroy () {
-    window.removeEventListener('scroll', this.handleScroll);
+    window.removeEventListener('scroll', this.handleScroll)
   }
 }
 </script>

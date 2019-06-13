@@ -43,12 +43,6 @@ export default {
     Services,
     Works,
     Contact,
-  },
-  beforeMount () {
-    this.$store.commit('fixedTopNavbar')
-  },
-  beforeDestroy () {
-    this.$store.commit('nonFixedTopNavbar')
   }
 }
 </script>
