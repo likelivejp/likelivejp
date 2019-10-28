@@ -1,55 +1,34 @@
 <template>
   <div class="mail_form">
-
-    <!-- class, action, methodを変更しないでください -->
-    <form class="formrun" action="https://form.run/api/v1/r/me2rz6ov8tce8lzdxd9s1uc5" method="post">
-      <!-- ↓自由に要素を追加・編集することができます -->
+    <form class="formrun" action="https://form.run/api/v1/r/71dsyybzgy9kj3lu3vmiptft" method="post">
       <div class="field">
-        <label class="label" for="name">お名前
-          <div class="control">
-            <input name="お名前" type="text" class="input" id="name">
-          </div>
-        </label>
+        <label class="label">お名前<span class="required">*必須</span></label>
+        <input name="お名前" type="text" class="text input">
       </div>
 
       <div class="field">
-        <label class="label" for="email">メールアドレス [必須]
-          <div class="control">
-            <input class="input" name="メールアドレス" type="text" data-formrun-type="email" data-formrun-required id="email">
-            <div data-formrun-show-if-error="メールアドレス">メールアドレスを正しく入力してください</div>
-          </div>
-        </label>
+        <label class="label">メールアドレス<span class="required">*必須</span></label>
+        <input name="メールアドレス" class="text input" type="text" data-formrun-type="email" data-formrun-required>
+        <div data-formrun-show-if-error="メールアドレス">メールアドレスを正しく入力してください</div>
       </div>
 
       <div class="field">
-        <label class="label" for="body">お問い合わせ [必須]
-          <div class="control">
-            <textarea class="textarea" name="お問い合わせ" data-formrun-required id="body"></textarea>
-          <div data-formrun-show-if-error="お問い合わせ">お問い合わせ入力してください</div>
-          </div>
-        </label>
+        <label class="label">お問い合わせ<span class="required">*必須</span></label>
+        <textarea name="お問い合わせ" class="textarea" data-formrun-required></textarea>
+        <div data-formrun-show-if-error="お問い合わせ">お問い合わせ入力してください</div>
       </div>
 
-      <div>
-        <label class="checkbox" for="policy">
-          <input type="checkbox" name="個人情報利用同意" data-formrun-required id="policy">
-          個人情報利用同意 [必須]
-        </label>
-        <div data-formrun-show-if-error="個人情報利用同意">同意してください</div>
-      </div>
-
-      <!-- ボット投稿をブロックするためのタグ -->
       <div class="_formrun_gotcha">
         <style media="screen">._formrun_gotcha {position:absolute!important;height:1px;width:1px;overflow:hidden;}</style>
         <label for="_formrun_gotcha">If you are a human, ignore this field</label>
         <input type="text" name="_formrun_gotcha" id="_formrun_gotcha" tabindex="-1">
       </div>
 
-      <hr>
-
-      <button class="button is-large" type="submit" data-formrun-error-text="未入力の項目があります" data-formrun-submitting-text="送信中...">送信</button>
+      <button type="submit" class="button is-primary has-text-weight-bold" data-formrun-error-text="未入力の項目があります" data-formrun-submitting-text="送信中...">送信</button>
     </form>
+
     <script src="https://sdk.form.run/js/v2/formrun.js"></script>
+
   </div>
 </template>
 
@@ -64,6 +43,10 @@ export default {
 .mail_form {
   max-width: 500px;
   margin: 0 auto;
-  text-align: center;
+}
+
+.required {
+  color: $red;
+  font-size: 80%;
 }
 </style>
