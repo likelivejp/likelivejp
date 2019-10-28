@@ -1,5 +1,6 @@
 <template>
   <div>
+  <!--
     <div class="columns">
       <div class="column">
         <img src="~assets/images/development.svg" width="" height="" alt="">
@@ -20,6 +21,7 @@
         <nuxt-link to="/" class="button is-rounded">くわしく見る</nuxt-link>
       </div>
     </div>
+-->
     <div class="columns">
       <div class="column">
         <img src="~assets/images/it.svg" width="" height="" alt="">
