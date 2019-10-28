@@ -35,6 +35,8 @@ export default {
       { hid: 'description', name: 'description', content: pkg.description }
     ],
     link: [
+      { rel: 'apple-touch-icon', type: 'image/png', href: '/favicon.ico' },
+      { rel: 'icon', type: 'image/png', href: '/apple-touch-icon-180x180.png' },
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
