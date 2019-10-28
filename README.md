@@ -30,10 +30,10 @@ $ bin/postgen foobar
 # install dependencies
 $ npm install
 
-# serve with hot reload at localhost:3000
+# serve with hot reload at localhost
 $ npm run dev
-
-# generate static project
-$ npm run generate
 ```
 
+## デプロイ
+
+masterにpushされたら自動でfirebaseにデプロイされます。
