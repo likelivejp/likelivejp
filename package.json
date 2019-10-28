@@ -14,20 +14,20 @@
     "deploy": "npm run generate && npx firebase deploy --only hosting --token \"$FIREBASE_TOKEN\""
   },
   "dependencies": {
-    "@nuxtjs/bulma": "^1.2.1",
-    "@nuxtjs/style-resources": "^0.1.2",
-    "cross-env": "^5.2.0",
-    "firebase-tools": "^6.11.0",
+    "@nuxtjs/bulma": "^1.2.5",
+    "@nuxtjs/style-resources": "^1.0.0",
+    "cross-env": "^6.0.3",
+    "firebase-tools": "^7.6.1",
     "foreman": "^3.0.1",
-    "markdown-it": "^8.4.2",
-    "node-sass": "^4.12.0",
-    "nuxt": "^2.4.0",
-    "processmd": "^4.4.2",
-    "rfs": "^8.0.4",
-    "sass-loader": "^7.1.0",
-    "style-loader": "^0.23.1"
+    "markdown-it": "^10.0.0",
+    "node-sass": "^4.13.0",
+    "nuxt": "^2.10.2",
+    "processmd": "^4.5.0",
+    "rfs": "^9.0.2",
+    "sass-loader": "^8.0.0",
+    "style-loader": "^1.0.0"
   },
   "devDependencies": {
-    "nodemon": "^1.18.9"
+    "nodemon": "^1.19.4"
   }
 }
