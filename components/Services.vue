@@ -3,43 +3,35 @@
   <!--
     <div class="columns">
       <div class="column">
-        <img src="~assets/images/development.svg" width="" height="" alt="">
-        <h3>IT戦略・提案</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae fugit dolores</p>
-        <nuxt-link to="/" class="button is-rounded">くわしく見る</nuxt-link>
-      </div>
-      <div class="column">
-        <img src="~assets/images/clipboard.svg" width="" height="" alt="">
-        <h3>経営やサイト相談</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae fugit dolores</p>
-        <nuxt-link to="/" class="button is-rounded">くわしく見る</nuxt-link>
-      </div>
-      <div class="column">
-        <img src="~assets/images/status.svg" width="" height="" alt="">
-        <h3>WEBプロデュース</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae fugit dolores</p>
-        <nuxt-link to="/" class="button is-rounded">くわしく見る</nuxt-link>
-      </div>
-    </div>
--->
-    <div class="columns">
-      <div class="column">
         <img src="~assets/images/it.svg" width="" height="" alt="">
-        <h3>運用サポート</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae fugit dolores</p>
-        <nuxt-link to="/" class="button is-rounded">くわしく見る</nuxt-link>
-      </div>
-      <div class="column">
-        <img src="~assets/images/automation.svg" width="" height="" alt="">
-        <h3>業務効率化・自動化</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae fugit dolores</p>
-        <nuxt-link to="/" class="button is-rounded">くわしく見る</nuxt-link>
+        <h3>ソフトウェア開発</h3>
+        <p>
+          受注管理・顧客管理など様々な業種向けのシステム開発を承ります。<br>
+          既存ソフトウェアで実現できなかった機能を構築します。<br>
+          また、サーバー・システムの保守管理まで一貫して行います。
+        </p>
+        <!-- <nuxt-link to="/" class="button is-rounded">くわしく見る</nuxt-link> -->
       </div>
       <div class="column">
         <img src="~assets/images/coding.svg" width="" height="" alt="">
-        <h3>サイト制作・開発</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae fugit dolores</p>
-        <nuxt-link to="/" class="button is-rounded">くわしく見る</nuxt-link>
+        <h3>業務効率化・自動化</h3>
+        <p>
+          大規模な開発予算がない場合や、すでにある業務の一部を改善したいお客様に。<br>
+          マイクロスケールな開発で必要十分な業務効率化を図ります。<br>
+          また別のアプローチとして、すでに慣れ親しんだ既存ソフトウェアの橋渡しを
+          するツールを開発・導入することで低単価でオペレーションレスな運用を実現します。
+        </p>
+        <!-- <nuxt-link to="/" class="button is-rounded">くわしく見る</nuxt-link> -->
+      </div>
+      <div class="column">
+        <img src="~assets/images/automation.svg" width="" height="" alt="">
+        <h3>Webサイト製作</h3>
+        <p>
+          コーポレートサイトから、スピードの必要なランディングページまで<br>
+          お客様のご要望に応じて柔軟に対応致します。<br>
+          サイトの構築から保守管理まで一貫して行います。
+        </p>
+        <!-- <nuxt-link to="/" class="button is-rounded">くわしく見る</nuxt-link> -->
       </div>
     </div>
   </div>

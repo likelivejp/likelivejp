@@ -1,5 +1,7 @@
 <template>
   <div class="mail_form">
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+    <script src="https://sdk.form.run/js/v2/formrun.js"></script>
     <form class="formrun" action="https://form.run/api/v1/r/71dsyybzgy9kj3lu3vmiptft" method="post">
       <div class="field">
         <label class="label">お名前<span class="required">*必須</span></label>
@@ -24,10 +26,10 @@
         <input type="text" name="_formrun_gotcha" id="_formrun_gotcha" tabindex="-1">
       </div>
 
+      <div class="g-recaptcha" data-sitekey="6Lcy_b8UAAAAAK7j1ZIhK7Q4bVzkKyW6Pxhxk_Dr"></div>
+
       <button type="submit" class="button is-primary has-text-weight-bold" data-formrun-error-text="未入力の項目があります" data-formrun-submitting-text="送信中...">送信</button>
     </form>
-
-    <script src="https://sdk.form.run/js/v2/formrun.js"></script>
 
   </div>
 </template>
