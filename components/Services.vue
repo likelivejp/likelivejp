@@ -1,6 +1,5 @@
 <template>
   <div>
-  <!--
     <div class="columns">
       <div class="column">
         <img src="~assets/images/it.svg" width="" height="" alt="">
