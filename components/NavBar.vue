@@ -15,6 +15,7 @@
 
     <div class="navbar-menu" id="navMenu" :class="{'is-active': isMenuActive}">
       <div class="navbar-end">
+        <a href="#staff" class="navbar-item">スタッフ</a>
         <nuxt-link to="/posts" class="navbar-item">ブログ</nuxt-link>
         <nuxt-link to="/works" class="navbar-item">今までのお仕事</nuxt-link>
         <div class="navbar-item">
