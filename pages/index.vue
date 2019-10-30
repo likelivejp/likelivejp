@@ -12,6 +12,11 @@
       <works />
     </section>
 
+    <section id="staff" class="container">
+      <h2 class="title">スタッフ</h2>
+      <staff />
+    </section>
+
     <section class="container contact">
       <h2 class="title">おといあわせ</h2>
       <contact />
@@ -35,6 +40,7 @@
 import FirstView from '~/components/FirstView.vue'
 import Services from '~/components/Services.vue'
 import Works from '~/components/Works.vue'
+import Staff from '~/components/Staff.vue'
 import Contact from '~/components/Contact.vue'
 
 export default {
@@ -42,6 +48,7 @@ export default {
     FirstView,
     Services,
     Works,
+    Staff,
     Contact,
   }
 }
