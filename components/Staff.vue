@@ -1,8 +1,8 @@
 <template>
   <div>
     <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="columns is-vcentered">
+      <div class="column is-10">
+        <div class="columns is-vcentered is-card">
           <div class="column is-3">
             <img src="~assets/images/staff-1.png" alt="">
           </div>
@@ -28,6 +28,10 @@ export default {
 </script>
 
 <style scoped lang="scss">
+.is-card {
+  box-shadow: 1px 1px 5px #d0d0d0;
+  padding: 5px 20px;
+}
 .skills {
   span {
     background-color: #a5d8b7;
