@@ -4,15 +4,20 @@
       <div class="column is-10">
         <div class="columns is-vcentered is-card">
           <div class="column is-3">
-            <img src="~assets/images/staff-1.png" alt="">
+            <img src="~assets/images/staff-masaki.png" alt="">
           </div>
           <div class="column is-9">
-            <h2 class="title">Staff name</h2>
+            <h2 class="title">Masaki (@masaquid)</h2>
             <div class="career">
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. mollitia totam voluptas incidunt. </p>
-              <p>At enim nisi vero quidem odit facilis ea minus optio error? Perferendis necessitatibus dolores numquam saepe voluptatem libero, </p>
+              <p>hogehoge <br> hogehoge</p>
+              <p>foobarpiyopiyo</p>
             </div>
-            <div class="skills"><span class="tag is-success">html</span><span class="tag is-success">css</span><span class="tag is-success">javascript</span></div>
+            <div class="skills">
+              <span class="tag is-success">エンジニア</span>
+              <span class="tag is-success">プロデュース</span>
+              <span class="tag is-success">ディレクション</span>
+              <span class="tag is-success">セールスプロモーション</span>
+            </div>
           </div>
         </div>
       </div>

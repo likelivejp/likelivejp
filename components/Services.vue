@@ -12,7 +12,7 @@
         <!-- <nuxt-link to="/" class="button is-rounded">くわしく見る</nuxt-link> -->
       </div>
       <div class="column">
-        <img src="~assets/images/coding.svg" width="" height="" alt="">
+        <img src="~assets/images/automation.svg" width="" height="" alt="">
         <h3>業務効率化・自動化</h3>
         <p>
           大規模な開発予算がない場合や、すでにある業務の一部を改善したいお客様に。<br>
@@ -23,8 +23,8 @@
         <!-- <nuxt-link to="/" class="button is-rounded">くわしく見る</nuxt-link> -->
       </div>
       <div class="column">
-        <img src="~assets/images/automation.svg" width="" height="" alt="">
         <h3>Webサイト製作</h3>
+        <img src="~assets/images/coding.svg" width="" height="" alt="">
         <p>
           コーポレートサイトから、スピードの必要なランディングページまで<br>
           お客様のご要望に応じて柔軟に対応致します。<br>
