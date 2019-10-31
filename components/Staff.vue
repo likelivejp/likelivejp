@@ -9,14 +9,39 @@
           <div class="column is-9">
             <h2 class="title">Masaki (@masaquid)</h2>
             <div class="career">
-              <p>hogehoge <br> hogehoge</p>
-              <p>foobarpiyopiyo</p>
+              <p>
+                前職プログラマー。<br>
+                現職ではお客様と直接交渉などをする機会が多く、エンジニア時代に不足していたスキルを補っています<br>
+                過去の経験を活かし、現在ではエンジニアとお客様を繋ぐ架け橋として。<br>
+                また、ディレクション業務や企画プロデュースを主に担当しています<br>
+                <br>
+                趣味はロードバイクとゲーム。<br>
+                自分のペースでストイックに打ち込める所が好きです。
+              </p>
+              <p>
+                <h4>【略歴】</h4>
+                平成14年～ Webサイト製作の学習開始<br>
+                平成16年～ プログラミングスクールでJavaを学習<br>
+                平成18年～ フリーランスでWeb製作・Javascript/PHPの学習<br>
+                平成20年～ PHPプログラマー・ネットワークエンジニアとして就職<br>
+                平成23年～ プログラマー離職<br>
+                平成24年～ 販促品やオリジナルグッズの販売・製作会社に就職<br>
+                平成27年～ 個人規模での開発・サービス制作を再開
+              </p>
             </div>
             <div class="skills">
-              <span class="tag is-success">エンジニア</span>
-              <span class="tag is-success">プロデュース</span>
-              <span class="tag is-success">ディレクション</span>
-              <span class="tag is-success">セールスプロモーション</span>
+              <span class="tag is-warning">エンジニア</span>
+              <span class="tag is-warning">ディレクション</span>
+              <span class="tag is-warning">プロデュース</span>
+              <span class="tag is-warning">セールスプロモーション</span>
+            </div>
+            <div class="skills">
+              <span class="tag is-success">HTML</span>
+              <span class="tag is-success">CSS</span>
+              <span class="tag is-success">PHP</span>
+              <span class="tag is-success">Ruby</span>
+              <span class="tag is-success">Python</span>
+              <span class="tag is-success">Golang</span>
             </div>
           </div>
         </div>
@@ -54,6 +79,17 @@ export default {
       margin: 1rem 0;
     }
   }
+}
+.career {
+  p {
+    font-size: 0.95rem;
+  }
+  h4 {
+    margin: 10px 0 5px;
+  }
+}
+.skills {
+  margin-top: 0.8rem;
 }
 
 .is-vcentered {
