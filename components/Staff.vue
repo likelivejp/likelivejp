@@ -38,10 +38,10 @@
             <div class="skills">
               <span class="tag is-success">HTML</span>
               <span class="tag is-success">CSS</span>
+              <span class="tag is-success">Javascript</span>
               <span class="tag is-success">PHP</span>
               <span class="tag is-success">Ruby</span>
               <span class="tag is-success">Python</span>
-              <span class="tag is-success">Golang</span>
             </div>
           </div>
         </div>
