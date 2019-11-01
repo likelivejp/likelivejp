@@ -4,7 +4,7 @@
       <div class="column is-10">
         <div class="columns is-vcentered is-card">
           <div class="column is-3">
-            <img src="~assets/images/staff-masaki.png" alt="">
+            <img src="~assets/images/staff-masaki.jpg" alt="">
           </div>
           <div class="column is-9">
             <h2 class="title">Masaki (@masaquid)</h2>
