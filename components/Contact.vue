@@ -4,18 +4,18 @@
     <script src="https://sdk.form.run/js/v2/formrun.js"></script>
     <form class="formrun" action="https://form.run/api/v1/r/71dsyybzgy9kj3lu3vmiptft" method="post">
       <div class="field">
-        <label class="label">お名前<span class="required">*必須</span></label>
+        <label class="label">お名前<span class="required"> *必須</span></label>
         <input name="お名前" type="text" class="text input">
       </div>
 
       <div class="field">
-        <label class="label">メールアドレス<span class="required">*必須</span></label>
+        <label class="label">メールアドレス<span class="required"> *必須</span></label>
         <input name="メールアドレス" class="text input" type="text" data-formrun-type="email" data-formrun-required>
         <div data-formrun-show-if-error="メールアドレス">メールアドレスを正しく入力してください</div>
       </div>
 
       <div class="field">
-        <label class="label">お問い合わせ<span class="required">*必須</span></label>
+        <label class="label">お問い合わせ<span class="required"> *必須</span></label>
         <textarea name="お問い合わせ" class="textarea" data-formrun-required></textarea>
         <div data-formrun-show-if-error="お問い合わせ">お問い合わせ入力してください</div>
       </div>

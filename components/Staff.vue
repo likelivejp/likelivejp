@@ -29,7 +29,7 @@
                 平成27年～ 個人規模での開発・サービス制作を再開
               </p> -->
             </div>
-            <div class="skills">
+            <div class="profession">
               <span class="tag is-warning">エンジニア</span>
               <span class="tag is-warning">ディレクション</span>
               <span class="tag is-warning">プロデュース</span>
@@ -62,9 +62,13 @@ export default {
   box-shadow: 1px 1px 5px #d0d0d0;
   padding: 5px 20px;
 }
+.profession {
+  span {
+    margin-right: 0.2rem;
+  }
+}
 .skills {
   span {
-    background-color: #a5d8b7;
     margin-right: 0.2rem;
   }
 }
