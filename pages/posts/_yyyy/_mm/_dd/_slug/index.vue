@@ -34,18 +34,18 @@
 </template>
 
 <script>
-import { sourceFileArray } from '~/.tmp/summary.json';
+import { sourceFileArray } from '~/.tmp/summary.json'
 
 export default {
   validate({ params }) {
-    return sourceFileArray.includes(`content/posts/${params.yyyy}/${params.mm}/${params.dd}/${params.slug}.md`);
+    return sourceFileArray.includes(`content/posts/${params.yyyy}/${params.mm}/${params.dd}/${params.slug}.md`)
   },
   asyncData({ params }) {
-    return Object.assign({}, require(`~/.tmp/json/posts/${params.yyyy}/${params.mm}/${params.dd}/${params.slug}.json`), { params });
+    return Object.assign({}, require(`~/.tmp/json/posts/${params.yyyy}/${params.mm}/${params.dd}/${params.slug}.json`), { params })
   },
   head() {
-    const title = `${this.title} - ライクライブ`;
-    const url = `https://likelive.jp/posts/${this.params.yyyy}/${this.params.mm}/${this.params.dd}/${this.params.slug}/`;
+    const title = `${this.title} - ライクライブ`
+    const url = `https://likelive.jp/posts/${this.params.yyyy}/${this.params.mm}/${this.params.dd}/${this.params.slug}/`
     return {
       title: title,
       meta: [
@@ -53,14 +53,14 @@ export default {
         { hid: 'og:title', property: 'og:title', content: title },
       ],
       link: [{ rel: 'canonical', href: url }],
-    };
+    }
   },
   methods: {
     mdToHtml: function (md) {
       return this.$mdToHtml(md)
     }
   }
-};
+}
 </script>
 
 <style scoped lang="scss">

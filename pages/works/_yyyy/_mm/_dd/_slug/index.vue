@@ -37,17 +37,17 @@
 <script>
 import Contact from '~/components/Contact.vue'
 
-import { sourceFileArray } from '~/.tmp/summary.json';
+import { sourceFileArray } from '~/.tmp/summary.json'
 
 export default {
   validate({ params }) {
-    return sourceFileArray.includes(`content/works/${params.slug}.md`);
+    return Object.assign({}, require(`~/.tmp/json/works/${params.yyyy}/${params.mm}/${params.dd}/${params.slug}.json`), { params })
   },
   asyncData({ params }) {
-    return Object.assign({}, require(`~/.tmp/json/works/${params.slug}.json`), { params });
+    return Object.assign({}, require(`~/.tmp/json/works/${params.slug}.json`), { params })
   },
   head() {
-    const title = `${this.title} - ライクライブ`;
+    const title = `${this.title} - ライクライブ`
     const url = `https://likelive.jp/works/${this.params.yyyy}/${this.params.mm}/${this.params.dd}/${this.params.slug}/`
     return {
       title: title,
@@ -56,7 +56,7 @@ export default {
         { hid: 'og:title', property: 'og:title', content: title },
       ],
       link: [{ rel: 'canonical', href: url }],
-    };
+    }
   },
   methods: {
     mdToHtml: function (md) {
@@ -66,7 +66,7 @@ export default {
   components: {
     Contact
   }
-};
+}
 </script>
 
 <style scoped lang="scss">
