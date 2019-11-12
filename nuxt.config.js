@@ -53,6 +53,7 @@ export default {
     '~assets/css/bulma.scss',
     '~assets/css/common.scss',
     '~assets/css/article.scss',
+    '~assets/css/balloon.scss',
   ],
 
   /*
