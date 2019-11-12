@@ -27,12 +27,16 @@
         <div class="post-meta"><time>{{ created_at.slice(0, created_at.indexOf('T', 0)) }}</time></div>
       </header>
       <div v-html="mdToHtml(bodyContent)" class="post-body"></div>
-    </article>
 
+      <h2 class="title">おといあわせ</h2>
+      <contact :title="title" />
+    </article>
   </section>
 </template>
 
 <script>
+import Contact from '~/components/Contact.vue'
+
 import { sourceFileArray } from '~/.tmp/summary.json';
 
 export default {
@@ -54,6 +58,14 @@ export default {
       link: [{ rel: 'canonical', href: url }],
     };
   },
+  methods: {
+    mdToHtml: function (md) {
+      return this.$mdToHtml(md)
+    }
+  },
+  components: {
+    Contact
+  }
 };
 </script>
 

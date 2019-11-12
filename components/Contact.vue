@@ -15,7 +15,11 @@
       </div>
 
       <div class="field">
-        <label class="label">お問い合わせ<span class="required"> *必須</span></label>
+        <input name="タイトル" type="hidden" class="text input" :value="title">
+      </div>
+
+      <div class="field">
+        <label class="label">お問い合わせ<span class="required">*必須</span></label>
         <textarea name="お問い合わせ" class="textarea" data-formrun-required></textarea>
         <div data-formrun-show-if-error="お問い合わせ">お問い合わせ入力してください</div>
       </div>
@@ -36,6 +40,7 @@
 
 <script>
 export default {
+  props: ['title'],
   components: {
   }
 }

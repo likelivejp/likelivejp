@@ -19,7 +19,7 @@
 
     <section class="container contact">
       <h2 class="title">おといあわせ</h2>
-      <contact />
+      <contact :title="トップページからのお問い合わせ" />
     </section>
   </div>
 </template>
