@@ -48,7 +48,7 @@ export default {
   },
   head() {
     const title = `${this.title} - ライクライブ`;
-    const url = `https://likelive.jp/works/${this.params.yyyy}/${this.params.mm}/${this.params.dd}/$`
+    const url = `https://likelive.jp/works/${this.params.yyyy}/${this.params.mm}/${this.params.dd}/${this.params.slug}/`
     return {
       title: title,
       meta: [
