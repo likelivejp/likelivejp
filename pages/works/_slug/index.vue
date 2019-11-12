@@ -26,7 +26,7 @@
         <h1>{{ title }}</h1>
         <div class="post-meta"><time>{{ created_at.slice(0, created_at.indexOf('T', 0)) }}</time></div>
       </header>
-      <div v-html="bodyHtml" class="post-body"></div>
+      <div v-html="mdToHtml(bodyContent)" class="post-body"></div>
     </article>
 
   </section>
