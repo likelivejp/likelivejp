@@ -4,13 +4,13 @@ created_at: 2019-06-12
 category: nuxtjs
 tags: 
   - nuxtjs
-  - firebase
   - vue
   - javascript
-image: https://t4traw.s3-ap-northeast-1.amazonaws.com/dropshare/hzvTriP1qg1UrQPemVgq40Tu0KqfgGvw.png
+  - bulma
+image: https://firebasestorage.googleapis.com/v0/b/likelivejp-cdcc9.appspot.com/o/images%2FhzvTriP1qg1UrQPemVgq40Tu0KqfgGvw.png?alt=media&token=d17fddd1-c20b-4c48-bc20-163225c006ea
 author: t4traw
 ---
-前回の記事はこちら -> [共通cssの作成と読み込み](/posts/2019/06/10/create_static_website_sample-0)
+前回の記事はこちら -> [共通cssの作成と読み込み](/posts/2019/06/10/create_static_website_sample-1)
 
 今回はcssフレームワークのBulmaの導入と、メニュー開閉の実装に関することを書きます。
 
@@ -253,7 +253,7 @@ export default {
 
 ---
 
-コンポーネントの動作やスタイルをコンポーネントの中に書ける（カプセル化）する事で、「あ、メニューの動きをちょっと変えたいな」と思ったら、そのコンポーネント.vueを見れば分かるので分かりやすいですね👍
+コンポーネントの動作やスタイルをコンポーネントの中に書ける（カプセル化）する事で、「あ、メニューの動きをちょっと変えたいな」と思ったら、その`コンポーネント.vue`を見れば理解できるので親切です👍
 
 次はmarkdownでページの作成とパーマリンクに関することを書きます。
 
@@ -264,7 +264,6 @@ export default {
 - [共通cssの作成と読み込み](/posts/2019/06/11/create_static_website_sample-1)
 - [Bulmaの導入とメニュー開閉スクリプト](/posts/2019/06/12/create_static_website_sample-2)
 - markdownでページ作成とパーマリンクの作成
-- 問い合わせフォームの実装
 - 静的サイトの生成
 - 細々とした設定・チューニング
 - Firebaseにデプロイ
