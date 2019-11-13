@@ -44,7 +44,7 @@ export default {
     return Object.assign({}, require(`~/.tmp/json/works/${params.yyyy}/${params.mm}/${params.dd}/${params.slug}.json`), { params })
   },
   asyncData({ params }) {
-    return Object.assign({}, require(`~/.tmp/json/works/${params.slug}.json`), { params })
+    return Object.assign({}, require(`~/.tmp/json/works/${params.yyyy}/${params.mm}/${params.dd}/${params.slug}.json`), { params })
   },
   head() {
     const title = `${this.title} - ライクライブ`
