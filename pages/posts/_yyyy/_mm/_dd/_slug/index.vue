@@ -31,6 +31,14 @@
       </header>
       <div v-html="mdToHtml(bodyContent)" class="post-body"></div>
     </article>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/atom-one-light.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js"></script>
+    <script>
+      hljs.initHighlightingOnLoad()
+    </script>
   </section>
 </template>
 
