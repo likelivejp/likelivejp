@@ -28,7 +28,6 @@
       </header>
       <div v-html="mdToHtml(bodyContent)" class="post-body"></div>
 
-      <h2 class="title">おといあわせ</h2>
       <contact :title="title" />
     </article>
   </section>

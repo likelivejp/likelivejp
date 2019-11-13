@@ -3,22 +3,18 @@
     <first-view />
 
     <section class="container services">
-      <h2 class="title">わたしたちができること</h2>
       <services />
     </section>
 
     <section class="container works">
-      <h2 class="title">いままでやってきたこと</h2>
       <works />
     </section>
 
     <section id="staff" class="container">
-      <h2 class="title">スタッフ</h2>
       <staff />
     </section>
 
     <section class="container contact">
-      <h2 class="title">おといあわせ</h2>
       <contact :title="トップページからのお問い合わせ" />
     </section>
   </div>

@@ -1,5 +1,6 @@
 <template>
   <div class="mail_form">
+    <h2 class="title">おといあわせ</h2>
     <script src='https://www.google.com/recaptcha/api.js'></script>
     <script src="https://sdk.form.run/js/v2/formrun.js"></script>
     <form class="formrun" action="https://form.run/api/v1/r/71dsyybzgy9kj3lu3vmiptft" method="post">

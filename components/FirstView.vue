@@ -88,6 +88,7 @@ export default {
   @include font-size(42px);
   color: #35495e;
   letter-spacing: 1px;
+  text-align: left;
   span {
     font-size: 1rem;
     display: block;
