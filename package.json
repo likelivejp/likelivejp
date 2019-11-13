@@ -5,6 +5,7 @@
   "author": "likelive",
   "private": true,
   "scripts": {
+    "new": "bin/postgen",
     "dev": "npx nf start -j Procfile",
     "build": "nuxt build",
     "start": "nuxt start",

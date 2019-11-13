@@ -1,16 +1,8 @@
 # likelivejp
 
-nuxt.jsで制作しています。
-
 ## 記事について
 
 content/postsまたはcontent/worksにmdファイルを作成すればビルドされるようになっています。
-
-### 新規記事の生成
-
-```
-$ bin/postgen foobar
-```
 
 ```
 .
@@ -22,15 +14,18 @@ $ bin/postgen foobar
 │                   └── foobar.md
 ```
 
-といった具合にテンプレートのmdを生成できます。
+といった具合のディレクトリ構成でお願いします。
 
 ## 開発
 
 ``` bash
-# install dependencies
+# 依存パッケージのインストール
 $ npm install
 
-# serve with hot reload at localhost
+# 新規記事の生成
+$ npm run new YOUR_PAGE_TITLE
+
+# ローカルサーバーの起動
 $ npm run dev
 ```
 
