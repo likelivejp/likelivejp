@@ -11,7 +11,7 @@ import Works from '~/components/Works.vue'
 
 export default {
   components: {
-    Works,
+    Works
   }
 }
 </script>
@@ -23,4 +23,3 @@ export default {
   padding: 0 2rem;
 }
 </style>
-

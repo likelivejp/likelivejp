@@ -1,33 +1,32 @@
 <template>
-<nuxt-link :to="url">
-  <div class="content">
-    <div class="content-image">
-      <img :src="image" alt="">
-    </div>
-    <div class="content-body">
-      <div class="media">
-        <div class="media-content">
-          <p class="title">{{ title }}</p>
+  <nuxt-link :to="url">
+    <div class="content">
+      <div class="content-image">
+        <img :src="image" alt="" />
+      </div>
+      <div class="content-body">
+        <div class="media">
+          <div class="media-content">
+            <p class="title">{{ title }}</p>
+          </div>
+        </div>
+        <div class="content-date">
+          <time :datetime="date">{{ date }}</time>
         </div>
       </div>
-      <div class="content-date">
-        <time :datetime="date">{{ date }}</time>
-      </div>
     </div>
-  </div>
-</nuxt-link>
+  </nuxt-link>
 </template>
 
 <script>
 export default {
-  components: {
-  },
+  components: {},
   props: {
     title: String,
     image: String,
     url: String,
     date: String
-  },
+  }
 }
 </script>
 
@@ -45,8 +44,8 @@ export default {
       position: absolute;
       top: 50%;
       left: 50%;
-      -webkit-transform: translate(-50%,-50%);
-      transform: translate(-50%,-50%);
+      -webkit-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
       width: 100%;
       height: auto;
     }

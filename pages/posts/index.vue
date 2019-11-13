@@ -23,21 +23,21 @@
 </style>
 
 <script>
-import { fileMap } from '~/.tmp/summary.json';
+import { fileMap } from '~/.tmp/summary.json'
 import Card from '~/components/Card.vue'
 
 export default {
   components: {
-    Card,
+    Card
   },
-  data () {
+  data() {
     return {
       posts: this.$getPaths('posts'),
       content: fileMap
     }
   },
   methods: {
-    extract_date: function (date) {
+    extract_date: function(date) {
       return date.slice(0, date.search(/T/))
     }
   }

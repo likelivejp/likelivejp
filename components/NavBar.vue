@@ -1,19 +1,32 @@
 <template>
-  <nav class="navbar is-spaced" :class="{'is-transparent': isTransparentNavbar, 'is-fixed-top': isFixedTop}" role="navigation" aria-label="main navigation">
+  <nav
+    class="navbar is-spaced"
+    :class="{ 'is-transparent': isTransparentNavbar, 'is-fixed-top': isFixedTop }"
+    role="navigation"
+    aria-label="main navigation"
+  >
     <div class="navbar-brand">
       <nuxt-link to="/" class="navbar-item">
-        <img src="~assets/logo.svg" width="80px" height="100%" alt="">
+        <img src="~assets/logo.svg" width="80px" height="100%" alt="" />
         <p class="name">ライクライブ<span>豊橋市・東三河で最先端のWEB開発・IT戦略を提供できるチーム</span></p>
       </nuxt-link>
 
-      <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navMenu" @click="toggleMenu" :class="{'is-active': isMenuActive}">
+      <a
+        role="button"
+        class="navbar-burger burger"
+        aria-label="menu"
+        aria-expanded="false"
+        data-target="navMenu"
+        @click="toggleMenu"
+        :class="{ 'is-active': isMenuActive }"
+      >
         <span aria-hidden="true"></span>
         <span aria-hidden="true"></span>
         <span aria-hidden="true"></span>
       </a>
     </div>
 
-    <div class="navbar-menu" id="navMenu" :class="{'is-active': isMenuActive}">
+    <div class="navbar-menu" id="navMenu" :class="{ 'is-active': isMenuActive }">
       <div class="navbar-end">
         <a href="#staff" class="navbar-item">スタッフ</a>
         <nuxt-link to="/posts" class="navbar-item">ブログ</nuxt-link>
@@ -40,11 +53,11 @@ export default {
     }
   },
   methods: {
-    toggleMenu () {
+    toggleMenu() {
       this.isMenuActive = !this.isMenuActive
     },
-    handleScroll () {
-      if (window.scrollY > (window.outerHeight - 230)) {
+    handleScroll() {
+      if (window.scrollY > window.outerHeight - 230) {
         this.isTransparentNavbar = false
       } else {
         this.isTransparentNavbar = true
@@ -52,7 +65,7 @@ export default {
     }
   },
   watch: {
-    '$route': function () {
+    $route: function() {
       this.isMenuActive = false
       if (this.$route.path === '/') {
         this.isFixedTop = true
@@ -68,10 +81,10 @@ export default {
       this.isFixedTop = false
     }
   },
-  beforeMount () {
+  beforeMount() {
     window.addEventListener('scroll', this.handleScroll)
   },
-  beforeDestroy () {
+  beforeDestroy() {
     window.removeEventListener('scroll', this.handleScroll)
   }
 }
@@ -85,8 +98,10 @@ export default {
     font-size: 0.7rem;
     display: block;
     font-weight: normal;
-    @media screen and (min-width: $tablet_width + 1px) {}
-    @media only screen and (min-width: $smartphone_width + 1px) and (max-width: $tablet_width) {}
+    @media screen and (min-width: $tablet_width + 1px) {
+    }
+    @media only screen and (min-width: $smartphone_width + 1px) and (max-width: $tablet_width) {
+    }
     @media screen and (max-width: $smartphone_width) {
       display: none;
     }

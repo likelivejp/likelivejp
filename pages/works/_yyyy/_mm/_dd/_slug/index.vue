@@ -24,7 +24,9 @@
     <article>
       <header>
         <h1>{{ title }}</h1>
-        <div class="post-meta"><time>{{ created_at.slice(0, created_at.indexOf('T', 0)) }}</time></div>
+        <div class="post-meta">
+          <time>{{ created_at.slice(0, created_at.indexOf('T', 0)) }}</time>
+        </div>
       </header>
       <div v-html="mdToHtml(bodyContent)" class="post-body"></div>
 
@@ -40,10 +42,18 @@ import { sourceFileArray } from '~/.tmp/summary.json'
 
 export default {
   validate({ params }) {
-    return Object.assign({}, require(`~/.tmp/json/works/${params.yyyy}/${params.mm}/${params.dd}/${params.slug}.json`), { params })
+    return Object.assign(
+      {},
+      require(`~/.tmp/json/works/${params.yyyy}/${params.mm}/${params.dd}/${params.slug}.json`),
+      { params }
+    )
   },
   asyncData({ params }) {
-    return Object.assign({}, require(`~/.tmp/json/works/${params.yyyy}/${params.mm}/${params.dd}/${params.slug}.json`), { params })
+    return Object.assign(
+      {},
+      require(`~/.tmp/json/works/${params.yyyy}/${params.mm}/${params.dd}/${params.slug}.json`),
+      { params }
+    )
   },
   head() {
     const title = `${this.title} - ライクライブ`
@@ -52,13 +62,13 @@ export default {
       title: title,
       meta: [
         { hid: 'og:url', property: 'og:url', content: url },
-        { hid: 'og:title', property: 'og:title', content: title },
+        { hid: 'og:title', property: 'og:title', content: title }
       ],
-      link: [{ rel: 'canonical', href: url }],
+      link: [{ rel: 'canonical', href: url }]
     }
   },
   methods: {
-    mdToHtml: function (md) {
+    mdToHtml: function(md) {
       return this.$mdToHtml(md)
     }
   },

@@ -3,7 +3,7 @@
     <section class="container">
       <div class="columns is-vcentered is-multiline is-centered">
         <div class="column is-3 is-logo">
-          <img src="~assets/logo.svg" width="100%" height="100%" alt="">
+          <img src="~assets/logo.svg" width="100%" height="100%" alt="" />
         </div>
         <div class="column is-7">
           <div class="is-main_q">
@@ -56,10 +56,10 @@ export default {
   @media screen and (min-width: $tablet_width + 1px) {
   }
   @media only screen and (min-width: $smartphone_width + 1px) and (max-width: $tablet_width) {
-    display :none;
+    display: none;
   }
   @media screen and (max-width: $smartphone_width) {
-    display :none;
+    display: none;
   }
 }
 
@@ -81,8 +81,8 @@ export default {
 }
 
 .title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue',
+    Arial, sans-serif;
   display: block;
   font-weight: bolder;
   @include font-size(42px);

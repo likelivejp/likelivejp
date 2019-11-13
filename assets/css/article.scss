@@ -47,13 +47,17 @@ article {
       font-weight: bold;
     }
 
-    p, ul, ol, blockquote {
+    p,
+    ul,
+    ol,
+    blockquote {
       margin: 2.8rem 0;
       @include font-size(1.2rem);
       line-height: 1.65;
     }
 
-    ul, ol {
+    ul,
+    ol {
       margin-left: 2rem;
     }
 

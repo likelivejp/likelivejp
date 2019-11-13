@@ -23,13 +23,14 @@
     <div class="bgfilter"></div>
     <article>
       <header>
-        <img :src="image" alt="">
+        <img :src="image" alt="" />
         <h1>{{ title }}</h1>
-        <div class="post-meta"><time>{{ created_at.slice(0, created_at.indexOf('T', 0)) }}</time></div>
+        <div class="post-meta">
+          <time>{{ created_at.slice(0, created_at.indexOf('T', 0)) }}</time>
+        </div>
       </header>
       <div v-html="mdToHtml(bodyContent)" class="post-body"></div>
     </article>
-
   </section>
 </template>
 
@@ -41,7 +42,11 @@ export default {
     return sourceFileArray.includes(`content/posts/${params.yyyy}/${params.mm}/${params.dd}/${params.slug}.md`)
   },
   asyncData({ params }) {
-    return Object.assign({}, require(`~/.tmp/json/posts/${params.yyyy}/${params.mm}/${params.dd}/${params.slug}.json`), { params })
+    return Object.assign(
+      {},
+      require(`~/.tmp/json/posts/${params.yyyy}/${params.mm}/${params.dd}/${params.slug}.json`),
+      { params }
+    )
   },
   head() {
     const title = `${this.title} - ライクライブ`
@@ -50,13 +55,13 @@ export default {
       title: title,
       meta: [
         { hid: 'og:url', property: 'og:url', content: url },
-        { hid: 'og:title', property: 'og:title', content: title },
+        { hid: 'og:title', property: 'og:title', content: title }
       ],
-      link: [{ rel: 'canonical', href: url }],
+      link: [{ rel: 'canonical', href: url }]
     }
   },
   methods: {
-    mdToHtml: function (md) {
+    mdToHtml: function(md) {
       return this.$mdToHtml(md)
     }
   }
@@ -64,9 +69,9 @@ export default {
 </script>
 
 <style scoped lang="scss">
-  section {
-    margin: 3vh auto 0;
-    max-width: 920px;
-    padding: 0 1rem;
-  }
+section {
+  margin: 3vh auto 0;
+  max-width: 920px;
+  padding: 0 1rem;
+}
 </style>

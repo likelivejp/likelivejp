@@ -45,7 +45,7 @@ export default {
     Services,
     Works,
     Staff,
-    Contact,
+    Contact
   }
 }
 </script>

@@ -5,19 +5,19 @@
       <div class="column is-10">
         <div class="columns is-vcentered is-card">
           <div class="column is-3">
-            <img src="~assets/images/staff-masaki.jpg" alt="">
+            <img src="~assets/images/staff-masaki.jpg" alt="" />
           </div>
           <div class="column is-9">
             <h2 class="title">森山 真樹 (@masaquid)</h2>
             <div class="career">
               <p>
-                前職Webプログラマー・ネットワークエンジニア<br>
-                現職ではお客様との交渉・ヒアリングに特化し、エンジニア時代に不足していたスキルを補っています<br>
-                <br>
-                無理のない開発サイドからの意見と、お客様のご要望を噛み砕き、<br>
-                またエンジニアとの直接連絡をする事で、速やかで細やかな配慮を心がけています。<br>
-                <br>
-                趣味はロードバイクとゲーム。<br>
+                前職Webプログラマー・ネットワークエンジニア<br />
+                現職ではお客様との交渉・ヒアリングに特化し、エンジニア時代に不足していたスキルを補っています<br />
+                <br />
+                無理のない開発サイドからの意見と、お客様のご要望を噛み砕き、<br />
+                またエンジニアとの直接連絡をする事で、速やかで細やかな配慮を心がけています。<br />
+                <br />
+                趣味はロードバイクとゲーム。<br />
                 自分のペースでストイックに打ち込める所が好きです。
               </p>
               <!-- <p>
@@ -54,8 +54,7 @@
 
 <script>
 export default {
-  components: {
-  }
+  components: {}
 }
 </script>
 
