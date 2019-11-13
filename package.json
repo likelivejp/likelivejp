@@ -1,7 +1,7 @@
 {
   "name": "likelivejp",
   "version": "1.0.0",
-  "description": "My superb Nuxt.js project",
+  "description": "WEBを使って何か仕掛けたい・ITをもっと活用したい・業務を効率化・ 自動化がしたい。そのお悩み、ライクライブが解決します！",
   "author": "likelive",
   "private": true,
   "scripts": {
@@ -23,6 +23,7 @@
     "markdown-it": "^10.0.0",
     "node-sass": "^4.13.0",
     "nuxt": "^2.10.2",
+    "prettier": "^1.19.1",
     "processmd": "^4.5.0",
     "rfs": "^9.0.2",
     "sass-loader": "^8.0.0",
