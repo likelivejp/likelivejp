@@ -68,7 +68,7 @@ Nuxt.jsの良いところは、Vue.jsのお作法がひと目みたらわかる�
 
 上記のNuxt.jsのロゴ部分はpages/index.vueとcomponents/Logo.vueにコードが書いてあるのですが、pages/index.vueの中身を見てみると、
 
-```
+```html
 <template>
   <div class="container">
     <div>
@@ -137,7 +137,6 @@ export default {
   padding-top: 15px;
 }
 </style>
-
 ```
 
 こんな感じになっていると思います。
@@ -146,7 +145,7 @@ export default {
 
 またコンポーネントの呼び出しに関しても
 
-```
+```js
 import Logo from '~/components/Logo.vue'
 
 export default {
@@ -248,7 +247,8 @@ h1[data-v-05d4cbf4] {
 - [Nuxt.jsのセットアップ](/posts/2019/06/10/create_static_website_sample-0)
 - [共通cssの作成と読み込み](/posts/2019/06/11/create_static_website_sample-1)
 - [Bulmaの導入とメニュー開閉スクリプト](/posts/2019/06/12/create_static_website_sample-2)
-- markdownでページ作成とパーマリンクの作成
+- [markdownでページ作成](/posts/2019/11/13/create_static_website_sample-3)
+- 記事一覧ページの作成
 - 静的サイトの生成
 - 細々とした設定・チューニング
 - Firebaseにデプロイ
