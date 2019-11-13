@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2 class="title">スタッフ</h2>
+    <h2 class="title is-centered">スタッフ</h2>
     <div class="columns is-centered">
       <div class="column is-10">
         <div class="columns is-vcentered is-card">

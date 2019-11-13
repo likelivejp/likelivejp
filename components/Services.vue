@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2 class="title">わたしたちができること</h2>
+    <h2 class="title is-centered">わたしたちができること</h2>
     <div class="columns">
       <div class="column">
         <img src="~assets/images/it.svg" width="" height="" alt="" />
@@ -49,10 +49,6 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.title {
-  text-align: center;
-}
-
 .columns {
   .column {
     text-align: center;

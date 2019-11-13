@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2 class="title">いままでやってきたこと</h2>
+    <h2 class="title is-centered">いままでやってきたこと</h2>
     <div class="columns is-multiline">
       <div class="column is-4" v-for="post in posts">
         <card

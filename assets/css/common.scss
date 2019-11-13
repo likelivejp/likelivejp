@@ -7,5 +7,7 @@ body {
 .title {
   color: $gray;
   font-size: 2rem;
-  text-align: center;
+  &.is-centered {
+    text-align: center;
+  }
 }
