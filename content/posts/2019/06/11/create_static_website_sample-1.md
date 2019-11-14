@@ -8,7 +8,7 @@ tags:
   - javascript
   - css
   - sass
-image: https://firebasestorage.googleapis.com/v0/b/likelivejp-cdcc9.appspot.com/o/images%2FhzvTriP1qg1UrQPemVgq40Tu0KqfgGvw.png?alt=media&token=d17fddd1-c20b-4c48-bc20-163225c006ea
+image: https://firebasestorage.googleapis.com/v0/b/likelivejp-cdcc9.appspot.com/o/images%2Ffirebase_image.png?alt=media&token=00e158a6-1961-4739-b2f9-2372da1d52ba
 author: t4traw
 ---
 前回の記事はこちら -> [Nuxt.jsのセットアップ](/posts/2019/06/10/create_static_website_sample-0)
