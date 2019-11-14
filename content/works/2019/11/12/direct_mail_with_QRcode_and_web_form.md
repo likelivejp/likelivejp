@@ -1,10 +1,13 @@
 ---
 title: QRコード付きハガキ（DM）と予約フォームの効率化をしました
 created_at: 2019-11-11
-category: 業務効率化
+category: 業務効率化・自動化
 tags: 
   - QRコード
+  - DM
+  - ハガキ
   - WEBフォーム
+  - 予約フォーム
 image: https://firebasestorage.googleapis.com/v0/b/likelivejp-cdcc9.appspot.com/o/images%2Fqr_and_form.png?alt=media&token=6a50be17-caca-40e3-95a1-ed46a6815a17
 author: t4traw
 ---

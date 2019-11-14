@@ -1,7 +1,7 @@
 ---
 title: サイトをリニューアルし、より高速化・インタラクティブになりました。
 created_at: 2019-05-30
-category: ライクライブ
+category: Webサイト製作
 tags: 
   - vuejs
   - nuxtjs
