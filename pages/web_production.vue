@@ -2,13 +2,13 @@
   <section>
     <div class="container main_container">
       <section>
-        <h1 class="title">ウェブサイト・アプリケーション制作、開発</h1>
+        <h1 class="title">ウェブサイト制作</h1>
         <div class="columns">
           <div class="column">
             <img src="~assets/images/2984354.png" alt="" />
           </div>
           <div class="column">
-            <p>お客様のビジネスを理解した最適なウェブサイト・アプリケーションの制作・開発。</p>
+            <p>お客様のビジネスを理解した最適なウェブサイトの制作。</p>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur quia aut illum perferendis nemo. Voluptas
               tenetur magni corporis id, earum exercitationem eaque, cumque, dolorum facilis reprehenderit laudantium
