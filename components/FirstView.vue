@@ -7,9 +7,9 @@
         </div>
         <div class="column is-7">
           <div class="is-main_q">
-            <h2 class="title">WEBを使って何か仕掛けたい<span>ECサイトやWEBサイトの制作から運用まで</span></h2>
-            <h2 class="title">ITをもっと活用したい<span>お客様に最適な技術解決を提案</span></h2>
+            <h2 class="title">Webを使って何か仕掛けたい<span>Webサイトや広告での集客、ネット販売の運用など</span></h2>
             <h2 class="title">業務を効率化・自動化がしたい<span>大掛かりな改善から小さな作業自動化なども</span></h2>
+            <h2 class="title">夢を実現したい<span>社会を楽しく・面白くする事業を全力で応援します</span></h2>
           </div>
           <p class="is-main_a">そのお悩み、ライクライブが解決します！</p>
         </div>

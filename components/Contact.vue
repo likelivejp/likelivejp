@@ -1,6 +1,6 @@
 <template>
   <div class="mail_form">
-    <h2 class="title is-centered">おといあわせ</h2>
+    <h2 class="title is-centered">お問い合わせ</h2>
     <script src="https://www.google.com/recaptcha/api.js"></script>
     <script src="https://sdk.form.run/js/v2/formrun.js"></script>
     <form class="formrun" action="https://form.run/api/v1/r/71dsyybzgy9kj3lu3vmiptft" method="post">
@@ -22,7 +22,7 @@
       <div class="field">
         <label class="label">お問い合わせ<span class="required">*必須</span></label>
         <textarea name="お問い合わせ" class="textarea" data-formrun-required></textarea>
-        <div data-formrun-show-if-error="お問い合わせ">お問い合わせ入力してください</div>
+        <div data-formrun-show-if-error="お問い合わせ">お問い合わせ内容を入力してください</div>
       </div>
 
       <div class="_formrun_gotcha">

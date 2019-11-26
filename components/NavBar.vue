@@ -8,7 +8,7 @@
     <div class="navbar-brand">
       <nuxt-link to="/" class="navbar-item">
         <img src="~assets/logo.svg" width="80px" height="100%" alt="" />
-        <p class="name">ライクライブ<span>豊橋市・東三河で最先端のWEB開発・IT戦略を提供できるチーム</span></p>
+        <p class="name">ライクライブ<span>豊橋市・東三河で最先端のWEB開発・IT戦略を提供するチームです</span></p>
       </nuxt-link>
 
       <a
