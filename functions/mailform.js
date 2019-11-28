@@ -1,6 +1,3 @@
-// const mailform = require('./mailform')
-// exports.mailform = functions.https.onRequest(mailform)
-
 const express = require('express')
 const app = express()
 const nodemailer = require('nodemailer')
