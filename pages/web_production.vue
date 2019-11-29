@@ -8,11 +8,9 @@
             <img src="~assets/images/2984354.png" alt="" />
           </div>
           <div class="column">
-            <p>お客様のビジネスを理解した最適なウェブサイトの制作。</p>
+            <p>お客様のビジネスに合わせた最適なウェブサイトの制作します。</p>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur quia aut illum perferendis nemo. Voluptas
-              tenetur magni corporis id, earum exercitationem eaque, cumque, dolorum facilis reprehenderit laudantium
-              aliquam nostrum debitis!
+              私たちは、ただウェブサイトを制作するのではなく、お客様のパートナーとして
             </p>
             <a href="/contact" class="button is-rounded has-text-weight-bold">すぐにお問い合わせ</a>
           </div>
@@ -100,21 +98,21 @@
 import Contact from '~/components/Contact.vue'
 
 const basicItems = [
-  { name: '基本制作料金', price: 200000, image: 'startup', checked: true },
-  { name: 'スマートフォン対応', price: 0, image: 'smartphone', checked: true },
-  { name: 'セキュリティ対応', price: 0, image: 'security', checked: true },
-  { name: 'お問い合わせフォーム', price: 0, image: 'web-design', checked: true },
-  { name: '技術相談・提案', price: 0, image: 'advise', checked: true }
+  { name: '基本制作料金', price: 100000, image: 'startup', checked: true },
+  { name: 'スマートフォン対応', price: 30000, image: 'smartphone', checked: true },
+  // { name: 'セキュリティ対応', price: 30000, image: 'security', checked: true },
+  { name: 'お問い合わせフォーム', price: 20000, image: 'web-design', checked: true },
+  { name: '独自ドメイン対応', price: 5000, image: 'domain', checked: false },
 ]
 const optionItems = [
-  { name: '独自ドメイン対応', price: 12345, image: 'domain', checked: false },
-  { name: 'ブログ機能', price: 12345, image: 'blog', checked: false },
-  { name: 'SNS連携', price: 12345, image: 'sharing', checked: false },
-  { name: '購入ボタン設置', price: 12345, image: 'cart', checked: false },
-  { name: 'LINE@', price: 12345, image: 'line', checked: false },
-  { name: 'Googleビジネス', price: 12345, image: 'google', checked: false },
-  { name: '広告マーケティング', price: 12345, image: 'marketing', checked: false },
-  { name: 'キーワードリサーチ', price: 12345, image: 'search', checked: false }
+  { name: 'ブログ機能', price: 100000, image: 'blog', checked: false },
+  // { name: '購入ボタン設置', price: 12345, image: 'cart', checked: false },
+  { name: 'SNS連携', price: 20000, image: 'sharing', checked: false },
+  { name: 'LINE@', price: 10000, image: 'line', checked: false },
+  { name: 'Googleビジネス', price: 10000, image: 'google', checked: false },
+  { name: 'キーワードリサーチ', price: 30000, image: 'search', checked: false },
+  { name: '広告マーケティング', price: 50000, image: 'marketing', checked: false },
+  { name: '技術相談・提案', price: 20000, image: 'advise', checked: true },
 ]
 
 export default {
