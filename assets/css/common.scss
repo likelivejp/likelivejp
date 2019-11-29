@@ -11,3 +11,9 @@ body {
     text-align: center;
   }
 }
+
+.field {
+  &.is-centered {
+    text-align: center;
+  }
+}

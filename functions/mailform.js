@@ -1,7 +1,7 @@
 const express = require('express')
 const app = express()
 const nodemailer = require('nodemailer')
-import * as functions from 'firebase-functions'
+const functions = require('firebase-functions')
 
 const account = {
   email: functions.config().google.email,
@@ -24,7 +24,15 @@ app.post('/mailform', (req, res) => {
     // to: req.body.email || 't4traw@gmail.com',
     // bcc: 'address@dummy.com',
     subject: 'お問い合わせ内容の確認',
-    text: 'メール内容'
+    text: `
+    formName: ${req.body.formName}
+    subject: ${req.body.subject}
+    company: ${req.body.company}
+    name: ${req.body.name}
+    tel: ${req.body.tel}
+    email: ${req.body.email}
+    content: ${req.body.content}
+    `
   }
 
   // send mail with defined transport object
