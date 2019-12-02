@@ -10,23 +10,20 @@ const account = {
 
 const transporter = nodemailer.createTransport({
   host: 'smtp.gmail.com',
-  secure: true, // true for 465, false for other ports
+  secure: true,
   auth: {
-    user: account.email, // generated ethereal user
-    pass: account.password // generated ethereal password
-  }
+    user: account.email,
+    pass: account.password
 })
 
 app.post('/mailform', (req, res) => {
   const mailOptions = {
     from: 'likeliveweb@gmail.com',
-    to: 't4traw@gmail.com',
-    // to: req.body.email || 't4traw@gmail.com',
-    // bcc: 'address@dummy.com',
+    to: req.body.email || 'info@likelive.jp',
+    bcc: 'info@likelive.jp',
     subject: 'お問い合わせ内容の確認',
     text: `
     formName: ${req.body.formName}
-    subject: ${req.body.subject}
     company: ${req.body.company}
     name: ${req.body.name}
     tel: ${req.body.tel}
@@ -35,7 +32,6 @@ app.post('/mailform', (req, res) => {
     `
   }
 
-  // send mail with defined transport object
   transporter.sendMail(mailOptions, (error, info) => {
     if (error) {
       return res.status(500).json({
