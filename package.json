@@ -30,7 +30,8 @@
     "processmd": "^4.5.0",
     "rfs": "^9.0.2",
     "sass-loader": "^8.0.0",
-    "style-loader": "^1.0.0"
+    "style-loader": "^1.0.0",
+    "nodemailer": "^6.3.1"
   },
   "devDependencies": {
     "nodemon": "^1.19.4"
