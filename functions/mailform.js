@@ -14,6 +14,7 @@ const transporter = nodemailer.createTransport({
   auth: {
     user: account.email,
     pass: account.password
+  }
 })
 
 app.post('/mailform', (req, res) => {
