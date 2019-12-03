@@ -1,6 +1,6 @@
 {
   "projects":{
-    "default": "likelivejp-cdcc9",
+    "production": "likelivejp-cdcc9",
     "staging": "likelivejp-staging"
   }
 }
