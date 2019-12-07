@@ -8,32 +8,35 @@
             <img src="~assets/images/2984354.png" alt="" />
           </div>
           <div class="column">
-            <p>お客様のビジネスに合わせた最適なウェブサイトの制作します。</p>
+            <p>お客様のご要望・ビジネススケールに合わせた最適なウェブサイトを提案・制作します。</p>
             <p>
-              私たちは、ただウェブサイトを制作するのではなく、お客様のパートナーとして
+              私たちはただウェブサイトを制作するのではなく、お客様のパートナーとして<br>
+              より効率良い、コストパフォーマンスに優れたウェブサイト制作をご提案致します。<br>
+              <br>
+              費用負担の大きい大規模なウェブサイト・サービス制作をしたのに効果がみられない・・・<br>
+              ウェブでの集客を考えているが、何からはじめて良いかわからない。<br>
+              お客様に寄り添ったウェブサイト・サービス制作で戦略的にお客様を応援します。
             </p>
             <a href="/contact" class="button is-rounded has-text-weight-bold">すぐにお問い合わせ</a>
           </div>
         </div>
       </section>
       <section>
-        <h2 class="title">たいとるたいとるたいとる</h2>
+        <h2 class="title">どんなサイトを作れば良いのか</h2>
         <div class="columns">
           <div class="column">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quos quo, quis libero nesciunt molestiae
-              dolorem esse, soluta tempora a repellendus sed sequi dignissimos officiis vel. Qui aliquid dolore
-              voluptatem.
+              お客様のご要望は様々かと存じます。<br>
+              会社の宣伝をしたい・新しい商材を販売したい・自社ショッピングサイトを作りたい<br>
+              実際の広告・販売の戦略により、作るべきウェブサイトの規模は異なってくるはずです。
             </p>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quos quo, quis libero nesciunt molestiae
-              dolorem esse, soluta tempora a repellendus sed sequi dignissimos officiis vel. Qui aliquid dolore
-              voluptatem.
+              私たちはお客様の意見を十分にヒアリングした上で、持てる経験と知識を遺憾なく発揮し
+              無駄なコストをかけず、着実に・最大限に効果がのぞめる方法をご提案させていただきます。
             </p>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quos quo, quis libero nesciunt molestiae
-              dolorem esse, soluta tempora a repellendus sed sequi dignissimos officiis vel. Qui aliquid dolore
-              voluptatem.
+              また、当然ウェブサイトは作って終わりではありません。<br>
+              ウェブサイトの運用から広告戦略などのアドバイスも含め、最後までご満足いただける結果が出せるよう責任を持ってフォローします。
             </p>
           </div>
           <div class="column">
