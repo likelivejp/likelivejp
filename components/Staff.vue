@@ -87,7 +87,7 @@ export default {
 }
 .career {
   p {
-    font-size: 0.95rem;
+    @include font-size(1rem);
   }
   h4 {
     margin: 10px 0 5px;

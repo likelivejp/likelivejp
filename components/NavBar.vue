@@ -92,10 +92,10 @@ export default {
 
 <style scoped lang="scss">
 .name {
-  font-size: 1.2rem;
+  @include font-size(1.2rem);
   font-weight: bold;
   span {
-    font-size: 0.7rem;
+    @include font-size(0.7rem);
     display: block;
     font-weight: normal;
     @media screen and (min-width: $tablet_width + 1px) {

@@ -82,6 +82,6 @@ export default {
 
 .required {
   color: $red;
-  font-size: 80%;
+  @include font-size(0.8rem);
 }
 </style>

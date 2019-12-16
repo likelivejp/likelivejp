@@ -52,7 +52,6 @@ article {
     ol,
     blockquote {
       margin: 2.8rem 0;
-      @include font-size(1.2rem);
       line-height: 1.65;
     }
 
@@ -77,13 +76,13 @@ article {
       color: #656161;
       p {
         margin: 0;
-        font-size: 1.1rem;
+        @include font-size(1.1rem);
       }
       cite {
         display: block;
         text-align: right;
         color: #888888;
-        font-size: 0.9em;
+        @include font-size(0.9em);
       }
     }
 

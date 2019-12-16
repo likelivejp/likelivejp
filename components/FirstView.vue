@@ -81,12 +81,12 @@ export default {
     Arial, sans-serif;
   display: block;
   font-weight: bolder;
-  @include font-size(42px);
+  @include font-size(2.2rem);
   color: #35495e;
   letter-spacing: 1px;
   text-align: left;
   span {
-    font-size: 1rem;
+    @include font-size(1rem);
     display: block;
   }
 }

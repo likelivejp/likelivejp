@@ -54,7 +54,7 @@ export default {
     text-align: center;
     margin: 2rem 0 2rem;
     h3 {
-      font-size: 1.2rem;
+      @include font-size(1.2rem);
       font-weight: bold;
       margin: 2rem 0 1rem;
     }
