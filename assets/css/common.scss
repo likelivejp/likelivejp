@@ -3,20 +3,28 @@
   src: url('//cdn.plusminus.io/font/webkoruri/20140628/WebKoruri.eot');
   src: url('//cdn.plusminus.io/font/webkoruri/20140628/WebKoruri.eot?#iefix') format('embedded-opentype');
   src: url('//cdn.plusminus.io/font/webkoruri/20140628/WebKoruri.woff') format('woff'),
-       url('//cdn.plusminus.io/font/webkoruri/20140628/WebKoruri.ttf') format('truetype');
-  src: url(//cdn.plusminus.io/font/webkoruri/20140628/WebKoruri.woff) format('woff'); 
+    url('//cdn.plusminus.io/font/webkoruri/20140628/WebKoruri.ttf') format('truetype');
+  src: url(//cdn.plusminus.io/font/webkoruri/20140628/WebKoruri.woff) format('woff');
 }
 
 html,
 body {
   margin: 0;
   padding: 0;
-  font-family: Koruri, 'Hiragino Kaku Gothic Pro','ヒラギノ角ゴ Pro W3','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;;
+  font-family: Koruri, 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック',
+    sans-serif;
+  @include font-size(1.1rem);
 }
 
 .title {
   color: $gray;
-  font-size: 2rem;
+  @include font-size(1.6rem);
+  &.is-centered {
+    text-align: center;
+  }
+}
+
+.field {
   &.is-centered {
     text-align: center;
   }

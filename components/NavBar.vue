@@ -8,7 +8,7 @@
     <div class="navbar-brand">
       <nuxt-link to="/" class="navbar-item">
         <img src="~assets/logo.svg" width="80px" height="100%" alt="" />
-        <p class="name">ライクライブ<span>豊橋市・東三河で最先端のWEB開発・IT戦略を提供できるチーム</span></p>
+        <p class="name">ライクライブ<span>豊橋市・東三河で最先端のWEB開発・IT戦略を提供するチームです</span></p>
       </nuxt-link>
 
       <a
@@ -92,10 +92,10 @@ export default {
 
 <style scoped lang="scss">
 .name {
-  font-size: 1.2rem;
+  @include font-size(1.2rem);
   font-weight: bold;
   span {
-    font-size: 0.7rem;
+    @include font-size(0.7rem);
     display: block;
     font-weight: normal;
     @media screen and (min-width: $tablet_width + 1px) {

@@ -1,9 +1,8 @@
 <template>
   <section class="container">
     <div class="columns is-multiline">
-      <div class="column is-4" v-for="post in posts">
+      <div class="column is-4" v-for="post in posts" :key="post">
         <card
-          :key="post"
           :title="content['.tmp/json' + post + '.json']['title']"
           :image="content['.tmp/json' + post + '.json']['image']"
           :date="extract_date(content['.tmp/json' + post + '.json']['created_at'])"

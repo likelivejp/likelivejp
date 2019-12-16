@@ -53,7 +53,7 @@ export default {
   .content-body {
     display: block;
     .title {
-      font-size: 1.2rem;
+      @include font-size(1.2rem);
       font-weight: normal;
       color: $content_box_color;
     }

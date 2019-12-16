@@ -15,7 +15,7 @@
     </section>
 
     <section class="container contact">
-      <contact :title="トップページからのお問い合わせ" />
+      <contact :title="contactFormTitle" />
     </section>
   </div>
 </template>
@@ -46,6 +46,11 @@ export default {
     Works,
     Staff,
     Contact
+  },
+  data() {
+    return {
+      contactFormTitle: 'トップページからのお問い合わせ'
+    }
   }
 }
 </script>

@@ -30,7 +30,7 @@
         <img src="~assets/images/coding.svg" width="" height="" alt="" />
         <h3>Webサイト製作</h3>
         <p>
-          お客様に寄り添ったヒアリング結果を元に、ゴールに合わせパッケージ単位でご提案をさせていただきます。
+          お客様に寄り添ったヒアリング結果を元に、ゴールに合わせてパッケージ単位でご提案をさせていただきます。
         </p>
         <p>
           通常のWebサイト製作の他、Googleビジネスをはじめとした主要サービスへの連携、LINE@への登録など一括して請け負います<br />
@@ -54,7 +54,7 @@ export default {
     text-align: center;
     margin: 2rem 0 2rem;
     h3 {
-      font-size: 1.2rem;
+      @include font-size(1.2rem);
       font-weight: bold;
       margin: 2rem 0 1rem;
     }
