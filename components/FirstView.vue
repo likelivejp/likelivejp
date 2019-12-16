@@ -26,7 +26,7 @@ export default {
 
 <style scoped lang="scss">
 .first_view {
-  background-image: url('~assets/images/first_view_bg.png');
+  background-image: url('~assets/images/first_view_bg.jpg');
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -44,7 +44,7 @@ export default {
 
 .columns {
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.82);
+  background-color: rgba(255, 255, 255, 0.9);
   min-height: 70vh;
 }
 
