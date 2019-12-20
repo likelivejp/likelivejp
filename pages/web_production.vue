@@ -3,9 +3,9 @@
     <div class="container main_container">
       <section>
         <h1 class="title">ウェブサイト制作</h1>
-        <div class="columns">
+        <div class="columns is-variable is-8">
           <div class="column">
-            <img src="~assets/images/2984354.png" alt="" />
+            <img src="~assets/images/web_production/business.svg" alt="" />
           </div>
           <div class="column">
             <p>お客様のご要望・ビジネススケールに合わせた最適なウェブサイトを提案・制作します。</p>
@@ -21,10 +21,11 @@
               <br />
               お客様に寄り添ったウェブサイト・サービス制作で戦略的にお客様を応援します。
             </p>
-            <a href="/contact" class="button is-rounded has-text-weight-bold">すぐにお問い合わせ</a>
+            <a href="/contact" class="button is-link is-rounded has-text-weight-bold">見積もりを依頼</a>
           </div>
         </div>
       </section>
+
       <section>
         <h2 class="title">どんなサイトを作れば良いのか</h2>
         <div class="columns">
@@ -50,19 +51,68 @@
             </p>
           </div>
           <div class="column">
-            <img src="https://placehold.it/500/500" alt="" />
+            <img src="~assets/images/web_production/rush-15.png" alt="" />
           </div>
         </div>
       </section>
+
       <section>
         <h2 class="title">たいとるたいとるたいとる</h2>
-        <div class="columns is-multiline">
-          <div class="column is-4"><img src="https://placehold.it/300/fb7452" alt="" /></div>
-          <div class="column is-4"><img src="https://placehold.it/300/fdd35f" alt="" /></div>
-          <div class="column is-4"><img src="https://placehold.it/300/b8c791" alt="" /></div>
-          <div class="column is-4"><img src="https://placehold.it/300/f9e07f" alt="" /></div>
-          <div class="column is-4"><img src="https://placehold.it/300/308695" alt="" /></div>
-          <div class="column is-4"><img src="https://placehold.it/300/b5d6fb" alt="" /></div>
+        <div class="columns is-variable is-8 is-multiline">
+          <div class="column is-4">
+            <div class="service_card">
+              <img src="~assets/images/web_production/web_design.svg" />
+              <h3 class="title is-small">コーポレートサイト制作</h3>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              </p>
+            </div>
+          </div>
+          <div class="column is-4">
+            <div class="service_card">
+              <img src="~assets/images/web_production/landing_page.svg" />
+              <h3 class="title is-small">ランディングページ制作</h3>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              </p>
+            </div>
+          </div>
+          <div class="column is-4">
+            <div class="service_card">
+              <img src="~assets/images/web_production/strategy.svg" />
+              <h3 class="title is-small">ウェブ戦略</h3>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              </p>
+            </div>
+          </div>
+          <div class="column is-4">
+            <div class="service_card">
+              <img src="~assets/images/web_production/shop.svg" />
+              <h3 class="title is-small">ネットショップ構築</h3>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              </p>
+            </div>
+          </div>
+          <div class="column is-4">
+            <div class="service_card">
+              <img src="~assets/images/web_production/owned_media.svg" />
+              <h3 class="title is-small">オウンドメディア制作</h3>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              </p>
+            </div>
+          </div>
+          <div class="column is-4">
+            <div class="service_card">
+              <img src="~assets/images/web_production/startup.svg" />
+              <h3 class="title is-small">その他・ウェブ制作</h3>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
       <section>
@@ -115,7 +165,7 @@ const basicItems = [
   { name: 'スマートフォン対応', price: 30000, image: 'smartphone', checked: true },
   // { name: 'セキュリティ対応', price: 30000, image: 'security', checked: true },
   { name: 'お問い合わせフォーム', price: 20000, image: 'web-design', checked: true },
-  { name: '独自ドメイン対応', price: 5000, image: 'domain', checked: false },
+  { name: '独自ドメイン対応', price: 5000, image: 'domain', checked: false }
 ]
 const optionItems = [
   { name: 'ブログ機能', price: 100000, image: 'blog', checked: false },
@@ -125,7 +175,7 @@ const optionItems = [
   { name: 'Googleビジネス', price: 10000, image: 'google', checked: false },
   { name: 'キーワードリサーチ', price: 30000, image: 'search', checked: false },
   { name: '広告マーケティング', price: 50000, image: 'marketing', checked: false },
-  { name: '技術相談・提案', price: 20000, image: 'advise', checked: true },
+  { name: '技術相談・提案', price: 20000, image: 'advise', checked: true }
 ]
 
 export default {
@@ -172,6 +222,12 @@ p {
   margin: 5rem auto;
   padding: 0 2rem;
   max-width: 1080px;
+}
+
+.service_card {
+  img {
+    max-height: 280px;
+  }
 }
 
 .option_icon {
