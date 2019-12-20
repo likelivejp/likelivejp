@@ -57,6 +57,28 @@
       </section>
 
       <section>
+        <h2 class="title">充実した標準サービス</h2>
+        <div class="columns">
+          <div class="column">
+            <img src="~assets/images/web_production/rush-8.png" alt="" />
+          </div>
+          <div class="column">
+            <p>ライクライブでは、他社では別途有料オプションになりがちな、</p>
+            <ul>
+              <li>スマートフォン対応</li>
+              <li>お問い合わせフォーム</li>
+              <li>セキュリティ対応</li>
+            </ul>
+            <p>といった、現代では必要不可欠な要素を標準で対応しています。</p>
+            <p>
+              また、ブログ機能（CMS対応）の追加、ファイルダウンロード機能、独自ドメインの取得代行・設定などにも対応しています。
+            </p>
+            <p>また、コストが高くなりがちなサーバー費用も、0円で抑える運用方法などを提案しています。</p>
+          </div>
+        </div>
+      </section>
+
+      <section>
         <h2 class="title">たいとるたいとるたいとる</h2>
         <div class="columns is-variable is-8 is-multiline">
           <div class="column is-4">

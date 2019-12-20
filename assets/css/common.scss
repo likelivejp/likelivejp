@@ -5,6 +5,17 @@ body {
   @include font-size(1.1rem);
 }
 
+ul,
+ol {
+  margin-left: 2rem;
+}
+
+ul {
+  li {
+    list-style-type: disc;
+  }
+}
+
 .title {
   $title_font_size: 2rem;
   @include font-size($title_font_size);
