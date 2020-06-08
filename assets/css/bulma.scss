@@ -1,9 +1,8 @@
-$blue: #51bdff;
-$pink: #ffb3b3;
 $family-serif: 'SF Pro JP', 'SF Pro Display', 'SF Pro Icons', 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3',
   メイリオ, Meiryo, 'ＭＳ Ｐゴシック', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 $primary: $blue;
 $navbar-height: 5rem;
 $navbar-item-img-max-height: 3rem;
+$hero-body-padding: 0;
 
 @import '~bulma/bulma';

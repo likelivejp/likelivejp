@@ -1,6 +1,6 @@
 <template>
-  <div class="mail_form">
-    <form class="formrun" v-if="isSubmit === false" @submit.prevent="onSubmit">
+  <div id="contact_form">
+    <form v-if="isSubmit === false" @submit.prevent="onSubmit">
       <h2 class="title is-centered">お問い合わせ</h2>
       <div class="field">
         <label for="company" class="label">企業・団体名</label>
@@ -8,29 +8,39 @@
       </div>
 
       <div class="field">
-        <label for="name" class="label">担当者名 (氏名)<span class="required">*必須</span></label>
+        <label for="name" class="label">
+          担当者名 (氏名)
+          <span class="required">*必須</span>
+        </label>
         <input type="name" v-model="name" name="name" class="text input" />
       </div>
 
       <div class="field">
-        <label for="tel" class="label">電話番号<span class="required">*必須</span></label>
+        <label for="tel" class="label">
+          電話番号
+          <span class="required">*必須</span>
+        </label>
         <input type="tel" v-model="tel" name="tel" class="text input" />
       </div>
 
       <div class="field">
-        <label for="email" class="label">メールアドレス<span class="required">*必須</span></label>
+        <label for="email" class="label">
+          メールアドレス
+          <span class="required">*必須</span>
+        </label>
         <input type="email" v-model="email" name="email" class="text input" />
       </div>
 
       <div class="field">
-        <label for="content" class="label">本文<span class="required">*必須</span></label>
+        <label for="content" class="label">
+          本文
+          <span class="required">*必須</span>
+        </label>
         <textarea v-model="content" name="content" rows="7" class="textarea"></textarea>
       </div>
 
       <div class="field is-centered">
-        <button type="submit" class="button is-primary is-large has-text-weight-bold">
-          送信
-        </button>
+        <button type="submit" class="button is-primary is-large has-text-weight-bold">送信</button>
       </div>
     </form>
     <div v-if="isSubmit === true">
@@ -75,9 +85,10 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.mail_form {
-  max-width: 500px;
+#contact_form {
+  width: 500px;
   margin: 0 auto;
+  padding-top: 2rem;
 }
 
 .required {
