@@ -5,11 +5,25 @@ body {
   @include font-size(1.1rem);
 }
 
+ul,
+ol {
+  margin-left: 2rem;
+}
+
+ul {
+  li {
+    list-style-type: disc;
+  }
+}
+
 .title {
-  color: $gray;
-  @include font-size(1.6rem);
+  $title_font_size: 2rem;
+  @include font-size($title_font_size);
   &.is-centered {
     text-align: center;
+  }
+  &.is-small {
+    font-size: ($title_font_size * 0.6);
   }
 }
 
@@ -17,4 +31,8 @@ body {
   &.is-centered {
     text-align: center;
   }
+}
+
+.hidden {
+  display: none;
 }

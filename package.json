@@ -19,6 +19,7 @@
     "@nuxtjs/style-resources": "^1.0.0",
     "axios": "^0.19.0",
     "cross-env": "^6.0.3",
+    "file-loader": "^4.2.0",
     "firebase-tools": "^7.6.1",
     "firebase-admin": "^8.0.0",
     "firebase-functions": "^3.0.0",

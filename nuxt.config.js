@@ -111,7 +111,13 @@ export default {
   /*
    ** Global CSS
    */
-  css: ['~assets/css/bulma.scss', '~assets/css/common.scss', '~assets/css/article.scss', '~assets/css/balloon.scss'],
+  css: [
+    '~assets/css/bulma.scss',
+    '~assets/css/common.scss',
+    '~assets/css/article.scss',
+    '~assets/css/balloon.scss',
+    '~assets/css/fonts.scss'
+  ],
 
   /*
    ** Plugins to load before mounting the App
