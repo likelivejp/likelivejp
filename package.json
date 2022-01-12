@@ -24,7 +24,7 @@
     "firebase-admin": "^8.0.0",
     "firebase-functions": "^3.0.0",
     "foreman": "^3.0.1",
-    "markdown-it": "^10.0.0",
+    "markdown-it": "^12.3.2",
     "node-sass": "^4.13.1",
     "nuxt": "^2.10.2",
     "prettier": "^1.19.1",
