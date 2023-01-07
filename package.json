@@ -26,7 +26,7 @@
     "foreman": "^3.0.1",
     "markdown-it": "^10.0.0",
     "node-sass": "^4.13.1",
-    "nuxt": "^2.10.2",
+    "nuxt": "^2.15.8",
     "prettier": "^1.19.1",
     "processmd": "^4.5.0",
     "rfs": "^9.0.2",
